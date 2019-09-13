@@ -1,232 +1,236 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-      <title>שירותי קריאייטיב בוידאו ובאינטרנט | קאפויה</title>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
-      <meta charset="utf-8"/>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-      <meta name="viewport" content="width=device-width"/>
-      <meta name="description" content="בניית אתרים לסטארטאפים, פרילנסרים וחברות. צילום סרטוני תדמית, בר מצווה, חתונות" />
-      <meta name="keywords" content="capoya, קאפויה, בניית אתרים, צילום, וידאו, אתר, סרטון פרסומי, קריאייטיב, עסק, סטארטאפ, פרילנסרים" />
-    	<link rel="shortcut icon" href="favicon.ico">
- <link href="MainBar.css" rel="stylesheet" type="text/css">
-      <link href="Box0.css" rel="stylesheet" type="text/css">
-      <link href="Box1.css" rel="stylesheet" type="text/css">
-      <link href="box2.css" rel="stylesheet" type="text/css">
-      <link href="Box3.css" rel="stylesheet" type="text/css">
-      <link href="Box4.css" rel="stylesheet" type="text/css">
-      <link href="box5.css" rel="stylesheet" type="text/css">
-      
-     <link href="animate.css" rel="stylesheet" type="text/css">
-     <link href="hover.css" rel="stylesheet" />
-      <style type="text/css">
-         @font-face {
-         font-family: 'sSUI';
-         src: url('fonts/segoeuil.ttf') format('truetype');
-         font-weight: 100;
-         }
-         @font-face {
-         font-family: 'Alef', sans-serif;
-         }
-         .player .controls .play {
-         display:none;
-         }
-         body, html {
-         margin:0;
-         padding:0;
-         overflow-x: hidden;
-         -moz-overflow-x: hidden;
-         -o-overflow-x: hidden;
-         -webkit-overflow-x: hidden;
-         box-sizing:border-box;
-		 background-color:#ededed;
-         }
-         a:link {
-         color: #000000;
-         }
-         a:visited {
-         color: #000000;
-         }
-         h1 {
-         margin-top: 40px;
-         font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-         text-align: center;
-         font-weight: 100;
-         font-size: 30px;
-         margin-bottom: 10px;
-         }
-         h4 {
-         font-weight: 100;
-         font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-         color: #527177;
-         margin-top: 0px;
-         font-size: 12px;
-         width: 80%;
-         margin-left: 10%;
-         margin-bottom: 20px;
-         }
-      </style>
-   
-      <!--analytics-->
-      <script>
-         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-         
-         ga('create', 'UA-69535137-1', 'auto');
-         ga('send', 'pageview');
-         
-      </script>
-      <!--Analytics-->
-   </head>
-   <body>
-  
-            <!--------------------About box, sliding from top----------------------------------------->
-   <div id = "box0" >
-              <img src="Photos/aboutCapoya2.png" alt="קאפויה בניית אתרים וצילום סרטוני תדמית" class="aboutLogo"/>
-             <table align="center" class="aboutTable">
-                <tr>
-                    <td class="gap"></td>
-                    <td align="left">
-                        <img src="Photos/cameraAbout.jpg" class="leftImg"/>
-                    </td>
-                   
-                    <td align="center">
-                          <p class="aboutTxt">  בעולם עתיר רעש, צריך להשמיע קול חזק בשביל להישמע.
-                זה בדיוק מה שאנחנו נעזור לכם לעשות. עבודת קריאטיב מקיפה באינטרנט ובוידאו זה המפתח להצלחה. 
-                ניצור בשבילכם מותג בשל ומגובש, תוך התחשבות בניתוח השוק ובקהל היעד. 
-                אנחנו נשמח לעבוד איתכם</p>
-                    </td>
-                   
-                    <td align="right">
-                        <img src="Photos/LaptopAbout.jpg" class="rightImg" />
-                    </td>
-                    <td class="gap"></td>
-                </tr>
-            </table>
-        <p id="gotcha" onClick="pushUp();enableScroll();" onmouseover="changeContent()" onmouseout="changeBack()" class="media">הבנתי</p>
-         <p id="gotcha2" onClick="unshowIt();enableScroll();" onmouseover="changeContent()" onmouseout="changeBack()" class="notherMedia">טל': 052-630-2888</p>
-        
-        </div>
-      </div> 
-   
-         <!-- <a href="#box1"><img src="Photos/up.png" alt="קפוץ למעלה" id="up"></a>-->
-      <!------------The Main Site Navigator---------------------------------------------------------------------->
-    <div id="MainBar">
-         <table align="center" id="tb">
+
+<head>
+    <title>שירותי קריאייטיב בוידאו ובאינטרנט | קאפויה</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="בניית אתרים לסטארטאפים, פרילנסרים וחברות. צילום סרטוני תדמית, בר מצווה, חתונות" />
+    <meta name="keywords"
+        content="capoya, קאפויה, בניית אתרים, צילום, וידאו, אתר, סרטון פרסומי, קריאייטיב, עסק, סטארטאפ, פרילנסרים" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="MainBar.css" rel="stylesheet" type="text/css">
+    <link href="Box0.css" rel="stylesheet" type="text/css">
+    <link href="Box1.css" rel="stylesheet" type="text/css">
+    <link href="box2.css" rel="stylesheet" type="text/css">
+    <link href="Box3.css" rel="stylesheet" type="text/css">
+    <link href="Box4.css" rel="stylesheet" type="text/css">
+    <link href="box5.css" rel="stylesheet" type="text/css">
+
+    <link href="animate.css" rel="stylesheet" type="text/css">
+    <link href="hover.css" rel="stylesheet" />
+    <style type="text/css">
+        @font-face {
+            font-family: 'sSUI';
+            src: url('fonts/segoeuil.ttf') format('truetype');
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: 'Alef', sans-serif;
+        }
+
+        .player .controls .play {
+            display: none;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            -moz-overflow-x: hidden;
+            -o-overflow-x: hidden;
+            -webkit-overflow-x: hidden;
+            box-sizing: border-box;
+            background-color: #ededed;
+        }
+
+        a:link {
+            color: #000000;
+        }
+
+        a:visited {
+            color: #000000;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+            text-align: center;
+            font-weight: 100;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-weight: 100;
+            font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+            color: #527177;
+            margin-top: 0px;
+            font-size: 12px;
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <!--analytics-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-69535137-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!--Analytics-->
+</head>
+
+<body>
+
+    <!--------------------About box, sliding from top----------------------------------------->
+    <div id="box0">
+        <img src="Photos/aboutCapoya2.png" alt="קאפויה בניית אתרים וצילום סרטוני תדמית" class="aboutLogo" />
+        <table align="center" class="aboutTable">
             <tr>
-               <td align="center" valign="middle" 
-                  onMouseOver=											
-                  "MM_swapImage('video','','Photos/videoFill.png',1);
-                  MM_changeProp('video2','','color','#884b1d','SPAN')" 
-                  onMouseOut=	
-                  "MM_swapImgRestore();
-                  MM_changeProp('video2','','color','#000000','SPAN')">
-                  <a href="#box4">
-                  <span  class="stright txtTool" id="video2">וידאו</span> 
-                  <img src="Photos/video.png"  alt="סרטוני תדמית" id="video" />
-                  </a>
-               </td>
-               
-               <td class="gap"></td>
-               
-               <td align="center" valign="middle"
-                  onMouseOver=
-                  "MM_swapImage('web','','Photos/webFill.png',1);
-                  MM_changeProp('web2','','color','#884b1d','SPAN')" 
-                  onMouseOut="MM_swapImgRestore();
-                  MM_changeProp('web2','','color','#000000','SPAN')">
-                  <a  href="#box2">
-                  <span class="stright txtTool" id="web2">אתר</span>
-                  <img src="Photos/web.png"  alt="בניית אתרים"  id="web"/>
-                  </a> 
-               </td>
-               <td width="10" class="off"></td>
-               
-               <td align="center" class="off media" valign="middle" >
-                  <img src="Photos/capoya30.png"  alt="קאפויה בניית אתרים וצילום סרטוני תדמית" id="capoyaS" class="stright"/>
-               </td>
+                <td class="gap"></td>
+                <td align="left">
+                    <img src="Photos/cameraAbout.jpg" class="leftImg" />
+                </td>
+
+                <td align="center">
+                    <p class="aboutTxt"> בעולם עתיר רעש, צריך להשמיע קול חזק בשביל להישמע.
+                        זה בדיוק מה שאנחנו נעזור לכם לעשות. עבודת קריאטיב מקיפה באינטרנט ובוידאו זה המפתח להצלחה.
+                        ניצור בשבילכם מותג בשל ומגובש, תוך התחשבות בניתוח השוק ובקהל היעד.
+                        אנחנו נשמח לעבוד איתכם</p>
+                </td>
+
+                <td align="right">
+                    <img src="Photos/LaptopAbout.jpg" class="rightImg" />
+                </td>
+                <td class="gap"></td>
             </tr>
-         </table>
-      </div>
+        </table>
+        <p id="gotcha" onClick="pushUp();enableScroll();" onmouseover="changeContent()" onmouseout="changeBack()"
+            class="media">הבנתי</p>
+        <p id="gotcha2" onClick="unshowIt();enableScroll();" onmouseover="changeContent()" onmouseout="changeBack()"
+            class="notherMedia">טל': 052-630-2888</p>
 
-      <!------------------------first box, video text & buttons------------------------------------------------>
-     <div id="box1">
-       <div id="position">
-        <!--<video loop autoplay muted id="vid">
+    </div>
+    </div>
+
+    <!-- <a href="#box1"><img src="Photos/up.png" alt="קפוץ למעלה" id="up"></a>-->
+    <!------------The Main Site Navigator---------------------------------------------------------------------->
+    <div id="MainBar">
+        <table align="center" id="tb">
+            <tr>
+                <td align="center" valign="middle" onMouseOver="MM_swapImage('video','','Photos/videoFill.png',1);
+                  MM_changeProp('video2','','color','#884b1d','SPAN')" onMouseOut="MM_swapImgRestore();
+                  MM_changeProp('video2','','color','#000000','SPAN')">
+                    <a href="#box4">
+                        <span class="stright txtTool" id="video2">וידאו</span>
+                        <img src="Photos/video.png" alt="סרטוני תדמית" id="video" />
+                    </a>
+                </td>
+
+                <td class="gap"></td>
+
+                <td align="center" valign="middle" onMouseOver="MM_swapImage('web','','Photos/webFill.png',1);
+                  MM_changeProp('web2','','color','#884b1d','SPAN')" onMouseOut="MM_swapImgRestore();
+                  MM_changeProp('web2','','color','#000000','SPAN')">
+                    <a href="#box2">
+                        <span class="stright txtTool" id="web2">אתר</span>
+                        <img src="Photos/web.png" alt="בניית אתרים" id="web" />
+                    </a>
+                </td>
+                <td width="10" class="off"></td>
+
+                <td align="center" class="off media" valign="middle">
+                    <img src="Photos/capoya30.png" alt="קאפויה בניית אתרים וצילום סרטוני תדמית" id="capoyaS"
+                        class="stright" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!------------------------first box, video text & buttons------------------------------------------------>
+    <div id="box1">
+        <div id="position">
+        <video loop autoplay muted id="vid">
            <source src="http://content.jwplatform.com/videos/DM2M47k0-PhY1q1UA.mp4" type="video/mp4" />
-          
-         </video>-->
-           			
+         </video>
+        </div>
+        <img src="Photos/Capoya400.png" alt="קאפויה בניית אתרים וסרטוני תדמית" id="capoya400" />
+        <h2 id="we">אנחנו בונים את זה שונה לחלוטין</h2>
+        <h2 id="you">שירותי קריאייטיב לקמפיינים בוידאו ובאינטרנט</h2>
+        <h3 id="how" onclick="pushDown();disableScroll();" class="media">צרו קשר</h3>
+        <h3 id="how2" onclick="showIt();disableScroll();" class="notherMedia">צרו קשר</h3>
+    </div>
 
-		
-		
-         </div>
-         <img src="Photos/Capoya400.png" alt="קאפויה בניית אתרים וסרטוני תדמית" id="capoya400"/>
-         <h2 id="we">אנחנו בונים את זה שונה לחלוטין</h2>
-         <h2 id="you">שירותי קריאייטיב לקמפיינים בוידאו ובאינטרנט</h2>
-         <h3 id="how" onclick="pushDown();disableScroll();" class="media">צרו קשר</h3>
-         <h3 id="how2" onclick="showIt();disableScroll();" class="notherMedia">צרו קשר</h3>
-  
-   </div>
+    <!------------------------second box------------------------------------------------>
+    <div id="box2">
+        <table class="thiswillberesponsive" align="center" cellpadding="0" cellspacing="0" dir="rtl">
+            <tr>
+                <td align="center">
+                    <div class="glass hvr-grow" onmouseover="changeColor(1)" onmouseout="changeBack(1)">
+                        <div class="fullwhite sand">
+                            <h1 class="group1">קמפיין</h1>
+                            <img src="Photos/Facebook_logo.svg" width="100" id="facebook1" />
+                            <p class="group1">
+                                יצירת עמוד עסקי, דף נחיתה רספונסיבי לאיסוף פרטי הלקוח ובניית פרסומת בפייסבוק
+                            </p>
+                            <img src="Photos/responsiveW.png" width="50" id="landing1" />
+                            <p class="group1">יצירת עמוד נחיתה רספונסיבי</p>
+                            <img src="Photos/camera.svg" width="30" id="camera1" />
+                            <p class="group1">יצירת פרסומת או וידאו למטרת שיווק וקידום<br />ניתן להטמעה בעמוד נחיתה
+                                רספונסיבי</p>
+                        </div>
+                    </div>
+                </td>
+                <td align="center">
+                    <div class="glass hvr-grow" onmouseover="changeColor(2)" onmouseout="changeBack(2)">
+                        <div class="fullwhite black">
+                            <h1 class="group2">אתר תוכן</h1>
 
-      <!------------------------second box------------------------------------------------>
-     <div id="box2">
-     			<table class="thiswillberesponsive" align="center" cellpadding="0" cellspacing="0" dir="rtl">
-                	<tr>
-                    	<td  align="center">
-                        		<div class="glass hvr-grow" onmouseover="changeColor(1)" onmouseout="changeBack(1)">
-                                	<div class="fullwhite sand">
-                                    	<h1 class="group1">קמפיין</h1>
-                                        
-                                        <img src="Photos/Facebook_logo.svg" width="100" id="facebook1"/>
-                                        
-                                        <p class="group1">
-                                        	יצירת עמוד עסקי, דף נחיתה רספונסיבי לאיסוף פרטי הלקוח ובניית פרסומת בפייסבוק
-                                        </p>
-                                        
-                                        <img src="Photos/responsiveW.png" width="50" id="landing1"/>
-                                        
-                                        
-                                        <p class="group1">יצירת עמוד נחיתה רספונסיבי</p>
-                                        
-                                          <img src="Photos/camera.svg" width="30" id="camera1"/>
-                                        
-                                        <p class="group1">יצירת פרסומת או וידאו למטרת שיווק וקידום<br />ניתן להטמעה בעמוד נחיתה רספונסיבי</p>
-                                    </div>
-                                </div>
-                        </td>
-                        <td  align="center">
-                        		<div class="glass hvr-grow" onmouseover="changeColor(2)" onmouseout="changeBack(2)">
-                                	<div class="fullwhite black">
-                                    	<h1  class="group2">אתר תוכן</h1>
-                                        
-                                        <img src="Photos/content.svg" width="100" id="parag2"/>
-										<p class="group2">בו ניתן לערוך לפרסם ולנהל תכנים. מיועד בעיקר לבלוגים, אתר לחברה או מוצר</p>
-                                    </div>
-                                </div>
-                        </td>
-                        <td  align="center">
-                        		<div class="glass hvr-grow" onmouseover="changeColor(3)" onmouseout="changeBack(3)">
-                                	<div class="fullwhite ocean">
-                                    	<h1  id="title3">פורטפוליו</h1>
-                                        
-                                        <img src="Photos/suitbrush.svg" width="100" />
-                                        
-                                        <p>
-נועד כדי להציג יכולות ביצוע ללקוחות פוטנציאלים. משמש בעיקר אנשי מקצוע העוסקים בתחום העיצוב החזותי</p>
+                            <img src="Photos/content.svg" width="100" id="parag2" />
+                            <p class="group2">בו ניתן לערוך לפרסם ולנהל תכנים. מיועד בעיקר לבלוגים, אתר לחברה או מוצר
+                            </p>
+                        </div>
+                    </div>
+                </td>
+                <td align="center">
+                    <div class="glass hvr-grow" onmouseover="changeColor(3)" onmouseout="changeBack(3)">
+                        <div class="fullwhite ocean">
+                            <h1 id="title3">פורטפוליו</h1>
 
-                                    </div>
-                                </div>
-                        </td>
-                        
-           
-                    </tr>
-                </table>
-      </div>
-      <!--<script>
+                            <img src="Photos/suitbrush.svg" width="100" />
+
+                            <p>
+                                נועד כדי להציג יכולות ביצוע ללקוחות פוטנציאלים. משמש בעיקר אנשי מקצוע העוסקים בתחום
+                                העיצוב החזותי</p>
+
+                        </div>
+                    </div>
+                </td>
+
+
+            </tr>
+        </table>
+    </div>
+    <!--<script>
 	  		function changeColor (num){
 				    var x = document.getElementsByClassName("group"+num);
 					var y=num;
@@ -234,7 +238,7 @@
 						for (i = 0; i < x.length; i++) {
 							x[i].style.color = "#3e6166";
 						}
-					
+
 				document.getElementById('facebook'+num).src="Photos/facebook_logo_green.svg";
 				document.getElementById('landing'+num).src="Photos/responsive.png";
 				document.getElementById('camera'+num).src="Photos/cameraG.svg";
@@ -252,521 +256,574 @@
 				document.getElementById('para2').src="Photos/paragraph.png";
 			}
 	  </script>-->
-      <!-------------------------Third box----------------------------------------------->
+    <!-------------------------Third box----------------------------------------------->
     <div id="box3">
-         <h1 class = "H1Margin white">בקאפויה, אנחנו יוצרים אומנות</h1>
-         <div id="center">
-     
-                  		<table align="center" class="aside">
-                        	<tr>
-                            	<td align="center"><img src="Photos/fitYou.png"  class= "marginSand" alt="אתר רספונסיבי"/></td>
-                            </tr>
-					  		<tr>
-                            	<td><h1 class="marginSandHead wow bounceIn stretch"  data-wow-duration="0.5s" style="letter-spacing:0px">להתאים אותך</h1></td>
-                            </tr>
-                            <tr>
-                            	<td><p class="marginSandTXT wow fadeIn stretch" style="letter-spacing:0px ">עיצוב רספונסיבי המקנה חווית משתמש אופטימלית לכל גודל מסך; הדרך שלך להגיע אל המשתמש בפלטפורמות השונות</p></td>
-                            </tr>
-                        </table>
-            
-                   		<table align="center" class="aside">
-                        	<tr>
-                            	<td align="center"><img src="Photos/camera2.png"  class= "marginSand" alt="צילום סרטון תדמית"/></td>
-                            </tr>
-                            <tr>
-                            	<td><h1 class="marginSandHead wow bounceIn stretch"  data-wow-duration="0.5s" style="letter-spacing:0px">לצלם אותך</h1></td>
-                            </tr>
-                            <tr>
-                            	<td><p  class="marginSandTXT wow animated fadeIn stretch" style="letter-spacing:0px">צילום וידאו וסטילס שיווקי והטמעתם באתר האינטרנט/פייסבוק; וידאו פרסומי</p></td>
-                            </tr>
-                        </table>
-            
-                  		<table align="center" class="aside">
-                        	<tr>
-                            	<td align="center"><img src="Photos/logo.png"  class= "marginSand" alt="מיתוג"/></td>
-                            </tr>
-                            <tr>
-                            	<td><h1 class="marginSandHead wow bounceIn stretch" data-wow-duration="0.5s" style="letter-spacing:0px">למתג אותך</h1></td>
-                            </tr>
-                            <tr>
-                            	<td><p  class="marginSandTXT wow fadeIn stretch" style="letter-spacing: 0px;">קריאייטיב וקופירייטינג - יצירת לוגו וסמלים, טקסט שיווקי, המעטפת הגרפית והרעיונית</p></td>
-                            </tr>
-                        </table>
-          
-            
-         
-         </div>
-      </div>
-      <!-----------------------forth box------------------------------------------------->
-     <div id="box4">
-        
-         <video src="Photos/sigi.mp4" id="sigi" onClick="vidplay4();"  poster="Photos/Sigi.jpg" style="cursor: pointer;" preload="none"></video>
-         
-            <table cellpadding="0" cellspacing="0" class="makeresponsive" align="center">
-               <tr>
-                          <td class="hvr-float">
-                          		<table class="semiglass">
-                                	<tr>
-                                    	<td class="top" align="center">
-                                        	<!--<div class="glass"></div>-->
-                                    	<img src="Photos/4k.png" alt="איכות צילום" class="photosize"/>
-                                        	<h3 dir="rtl">איכות 4K</h3>
-                                            
-                                        </td>
-                                    </tr>
-                                </table>
-                          </td>
-                          <td style="width:10px;height:10px"></td>
-                            <td class="hvr-float">
-                          		<table class="semiglass">
-                                	<tr>
-                                    	<td class="top" align="center">
-                                            <img src="Photos/Film.png" alt="וידאו פרסומי" class="photosize"/>
-                                            <h3>וידאו פרסומי</h3>
-                                        </td>
-                                    </tr>
-                                </table>
-                          </td>  
-         		</tr>
-                <tr><td style="height:10px;"></td></tr>
-                  <tr>
-                          <td class="hvr-float">
-                          		<table class="semiglass">
-                                	<tr>
-                                    	<td class="top" align="center">
-                                            <img src="Photos/Note.png" alt="סאונד מקצועי" class="photosize"/>
-                                            <h3 dir="rtl">סאונד מקצועי</h3>
-                                        </td>
-                                    </tr>
-                                </table>
-                          </td>
-                          <td style="width:10px;height:10px"></td>
-                            <td class="hvr-float">
-                          		<table class="semiglass">
-                                	<tr>
-                                    	<td class="top" align="center">
-                                            <img src="Photos/Color.png" alt="תיקוני צבע" class="photosize"/>
-                                            <h3 dir="rtl">תיקוני צבע</h3>
-                                        </td>
-                                    </tr>
-                                </table>
-                          </td>  
-         		</tr>
+        <h1 class="H1Margin white">בקאפויה, אנחנו יוצרים אומנות</h1>
+        <div id="center">
 
+            <table align="center" class="aside">
+                <tr>
+                    <td align="center"><img src="Photos/fitYou.png" class="marginSand" alt="אתר רספונסיבי" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1 class="marginSandHead wow bounceIn stretch" data-wow-duration="0.5s"
+                            style="letter-spacing:0px">להתאים אותך</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="marginSandTXT wow fadeIn stretch" style="letter-spacing:0px ">עיצוב רספונסיבי המקנה
+                            חווית משתמש אופטימלית לכל גודל מסך; הדרך שלך להגיע אל המשתמש בפלטפורמות השונות</p>
+                    </td>
+                </tr>
             </table>
-        
-      </div>
-      <!------------form box, last box------------------------------------------------------------>
-     <div id="box5" dir="rtl">
-      <h1 id="helpUs" style="letter-spacing: 8px; top: 0px; position: static; margin-top: 50px;">רק כמה פרטים וסיימנו</h1>
-<!--    http://www.ipage.com/scripts/formemail.bml-->
-         
-	<form action="" method="post" id="form1" dir="rtl">
-        	<input type="hidden" name="my_email" value="lolzcheck@gmail.com">
-           	<input type="hidden" name="thankyou_url" value="תודה רבה!">
 
-                        <div id="question_1"  class="animated slideInDown pos" align="center">
-                        		<legend>ראשית, בחר את השירות בו היית מעוניין</legend>
-                   		  	
-                   			  <input name="service" type="radio" id="service_1" form="form1" value="קמפיין">
-                   			  <label for="service_1" class="slot" onclick="show_question_2()">קמפיין</label>
-                            	 
-                              <input name="service" type="radio" id="service_2" form="form1" value="פורטפוליו">
-                   			  <label for="service_2" class="slot" onclick="show_question_3()">פורטפוליו</label>
-                              
-                               <input name="service" type="radio" id="service_3" form="form1" value="אתר תוכן">
-                   			  <label for="service_3" class="slot" onclick="show_question_3()">אתר תוכן</label>  
-                        </div>
-                        
-                        <div id="question_2" class="hider pos" align="center">
-                       		<legend>בחר את מאפייני הקמפיין</legend>
-                   		  	
-                   			  <input name="service_p" type="checkbox" id="service_p1" form="form1" value="פייסבוק">
-                   			  <label for="service_p1" class="slot">פייסבוק</label>
-                            	 
-                              <input name="service_p" type="checkbox" id="service_p2" form="form1" value="עמוד נחיתה">
-                   			  <label for="service_p2" class="slot">עמוד נחיתה</label>
-                              
-                               <input name="service_p" type="checkbox" id="service_p3" form="form1" value="וידאו פרסומי">
-                   			  <label for="service_p3" class="slot">וידאו פרסומי</label>  
-                              
-                              
-                              <div id="next" class="back hider" onclick="next(3 , 2)">הבא</div>
-                        </div>
-                        
-                        <div id="question_3" class="hider pos" align="center">
-                       		  	<legend>מי אתה?</legend>
-                    			<table width="200" id="tb2">
-									  <tr align="center">
-                                        		<td>
-                                                    <input name="who_are_you" type="radio" id="who_are_you_1" form="form1" value="פרילנסר">
-                                                    <label for ="who_are_you_1" class = "slot" onclick="show_question_4()">פרילנסר</label>
-                                                </td>
-                                                <td>
-                                                    <input name="Selection2" type="radio" id="who_are_you_2" form="form1" value="סטארטאפ">
-                                                    <label for ="who_are_you_2" class = "slot" onclick="show_question_4()">סטארטאפ</label>
-                                                </td>
-                                                <td>
-                                                    <input name="Selection2" type="radio" id="who_are_you_3" form="form1" value="מקצוע חופשי">
-                                                    <label for ="who_are_you_3" class = "slot" onclick="show_question_4()">מקצוע חופשי</label>
-                                                </td>
-                                                <td>
-                                                  	<input name="Selection2" type="radio" id="who_are_you_4" form="form1" value="אמן">
-                                                    <label for ="who_are_you_4" class = "slot" onclick="show_question_4()">אמן</label>
-                                              	</td>
-										</tr>
-                                        <tr align="center">
-                                        		<td>
-                                                    <input name="Selection2" type="radio"  id="who_are_you_5" form="form1" value="בעל עסק">
-                                                    <label for ="who_are_you_5" class = "slot" onclick="show_question_4()">בעל עסק</label>
-                                        		</td>
-                                                <td>
-                                                    <input name="Selection2" type="radio"  id="who_are_you_6" form="form1" value="חברה">
-                                                    <label for ="who_are_you_6" class = "slot" onclick="show_question_4()">חברה</label>
-                                                </td>
-                                                <td>
-                                                    <input name="Selection2" type="radio" id="who_are_you_7" form="form1" value="עמותה/ארגון">
-                                                    <label for ="who_are_you_7" class = "slot" onclick="show_question_4()">עמותה/ארגון</label>
-                                                </td>
-                                                <td>
-                                                    <input name="Selection2" type="radio"  id="who_are_you_8" form="form1" value="אחר">
-                                                    <label for ="who_are_you_8" class = "slot" onclick="show_question_4()">אחר</label>
-                                              </td>
-										</tr>
-                                    </table>
-   
-                              
-                             	
+            <table align="center" class="aside">
+                <tr>
+                    <td align="center"><img src="Photos/camera2.png" class="marginSand" alt="צילום סרטון תדמית" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1 class="marginSandHead wow bounceIn stretch" data-wow-duration="0.5s"
+                            style="letter-spacing:0px">לצלם אותך</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="marginSandTXT wow animated fadeIn stretch" style="letter-spacing:0px">צילום וידאו
+                            וסטילס שיווקי והטמעתם באתר האינטרנט/פייסבוק; וידאו פרסומי</p>
+                    </td>
+                </tr>
+            </table>
 
-                        </div>
-                         <div id="question_4" class="hider pos" align="center">
-                       		<legend>מלא את הפרטים על מנת שנוכל לחזור אלייך</legend>
-                                      <input name="fullname" type="text" required  class="slotform" id="fullname" form="form1" placeholder="חברה/שם" title="שם מלא" autocomplete="on">
-                                     
-                                      <input name="phone" type="tel" required class="slotform" id="phone" form="form1" placeholder="טלפון" title="טלפון" autocomplete="on">
-                                      
-                                      <input name="email" type="email" required class="slotform" id="email" form="form1" placeholder="אימייל" title="אימייל" autocomplete="on">
-                                      
-                                      <textarea name="iextraT" wrap="hard" dir="rtl" class="slotform" id="extraT" form="form1" placeholder="פירוט (וזה בסדר אם אין)"></textarea>
-                                     
-                                      <input name="submit" class="slot" type="submit" id="submit" value="שלח">
-                              
-                             
-                        </div>
-                        	
-            </form>
-          
+            <table align="center" class="aside">
+                <tr>
+                    <td align="center"><img src="Photos/logo.png" class="marginSand" alt="מיתוג" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1 class="marginSandHead wow bounceIn stretch" data-wow-duration="0.5s"
+                            style="letter-spacing:0px">למתג אותך</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="marginSandTXT wow fadeIn stretch" style="letter-spacing: 0px;">קריאייטיב וקופירייטינג
+                            - יצירת לוגו וסמלים, טקסט שיווקי, המעטפת הגרפית והרעיונית</p>
+                    </td>
+                </tr>
+            </table>
 
-      </div>
-      <!------------------------------------------------------------------------> 
-      <!--wow--> 
-      <script type="text/javascript" src="wow.js"></script> 
-      <script>
-         new WOW().init();
-      </script> 
-      <!--end-->
-   <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
-      
-		
-      
-      
+
+
+        </div>
+    </div>
+    <!-----------------------forth box------------------------------------------------->
+    <div id="box4">
+
+        <video src="Photos/sigi.mp4" id="sigi" onClick="vidplay4();" poster="Photos/Sigi.jpg" style="cursor: pointer;"
+            preload="none"></video>
+
+        <table cellpadding="0" cellspacing="0" class="makeresponsive" align="center">
+            <tr>
+                <td class="hvr-float">
+                    <table class="semiglass">
+                        <tr>
+                            <td class="top" align="center">
+                                <!--<div class="glass"></div>-->
+                                <img src="Photos/4k.png" alt="איכות צילום" class="photosize" />
+                                <h3 dir="rtl">איכות 4K</h3>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="width:10px;height:10px"></td>
+                <td class="hvr-float">
+                    <table class="semiglass">
+                        <tr>
+                            <td class="top" align="center">
+                                <img src="Photos/Film.png" alt="וידאו פרסומי" class="photosize" />
+                                <h3>וידאו פרסומי</h3>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="height:10px;"></td>
+            </tr>
+            <tr>
+                <td class="hvr-float">
+                    <table class="semiglass">
+                        <tr>
+                            <td class="top" align="center">
+                                <img src="Photos/Note.png" alt="סאונד מקצועי" class="photosize" />
+                                <h3 dir="rtl">סאונד מקצועי</h3>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="width:10px;height:10px"></td>
+                <td class="hvr-float">
+                    <table class="semiglass">
+                        <tr>
+                            <td class="top" align="center">
+                                <img src="Photos/Color.png" alt="תיקוני צבע" class="photosize" />
+                                <h3 dir="rtl">תיקוני צבע</h3>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+    <!------------form box, last box------------------------------------------------------------>
+    <div id="box5" dir="rtl">
+        <h1 id="helpUs" style="letter-spacing: 8px; top: 0px; position: static; margin-top: 50px;">רק כמה פרטים וסיימנו
+        </h1>
+        <!--    http://www.ipage.com/scripts/formemail.bml-->
+
+        <form action="" method="post" id="form1" dir="rtl">
+            <input type="hidden" name="my_email" value="lolzcheck@gmail.com">
+            <input type="hidden" name="thankyou_url" value="תודה רבה!">
+
+            <div id="question_1" class="animated slideInDown pos" align="center">
+                <legend>ראשית, בחר את השירות בו היית מעוניין</legend>
+
+                <input name="service" type="radio" id="service_1" form="form1" value="קמפיין">
+                <label for="service_1" class="slot" onclick="show_question_2()">קמפיין</label>
+
+                <input name="service" type="radio" id="service_2" form="form1" value="פורטפוליו">
+                <label for="service_2" class="slot" onclick="show_question_3()">פורטפוליו</label>
+
+                <input name="service" type="radio" id="service_3" form="form1" value="אתר תוכן">
+                <label for="service_3" class="slot" onclick="show_question_3()">אתר תוכן</label>
+            </div>
+
+            <div id="question_2" class="hider pos" align="center">
+                <legend>בחר את מאפייני הקמפיין</legend>
+
+                <input name="service_p" type="checkbox" id="service_p1" form="form1" value="פייסבוק">
+                <label for="service_p1" class="slot">פייסבוק</label>
+
+                <input name="service_p" type="checkbox" id="service_p2" form="form1" value="עמוד נחיתה">
+                <label for="service_p2" class="slot">עמוד נחיתה</label>
+
+                <input name="service_p" type="checkbox" id="service_p3" form="form1" value="וידאו פרסומי">
+                <label for="service_p3" class="slot">וידאו פרסומי</label>
+
+
+                <div id="next" class="back hider" onclick="next(3 , 2)">הבא</div>
+            </div>
+
+            <div id="question_3" class="hider pos" align="center">
+                <legend>מי אתה?</legend>
+                <table width="200" id="tb2">
+                    <tr align="center">
+                        <td>
+                            <input name="who_are_you" type="radio" id="who_are_you_1" form="form1" value="פרילנסר">
+                            <label for="who_are_you_1" class="slot" onclick="show_question_4()">פרילנסר</label>
+                        </td>
+                        <td>
+                            <input name="Selection2" type="radio" id="who_are_you_2" form="form1" value="סטארטאפ">
+                            <label for="who_are_you_2" class="slot" onclick="show_question_4()">סטארטאפ</label>
+                        </td>
+                        <td>
+                            <input name="Selection2" type="radio" id="who_are_you_3" form="form1" value="מקצוע חופשי">
+                            <label for="who_are_you_3" class="slot" onclick="show_question_4()">מקצוע חופשי</label>
+                        </td>
+                        <td>
+                            <input name="Selection2" type="radio" id="who_are_you_4" form="form1" value="אמן">
+                            <label for="who_are_you_4" class="slot" onclick="show_question_4()">אמן</label>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <input name="Selection2" type="radio" id="who_are_you_5" form="form1" value="בעל עסק">
+                            <label for="who_are_you_5" class="slot" onclick="show_question_4()">בעל עסק</label>
+                        </td>
+                        <td>
+                            <input name="Selection2" type="radio" id="who_are_you_6" form="form1" value="חברה">
+                            <label for="who_are_you_6" class="slot" onclick="show_question_4()">חברה</label>
+                        </td>
+                        <td>
+                            <input name="Selection2" type="radio" id="who_are_you_7" form="form1" value="עמותה/ארגון">
+                            <label for="who_are_you_7" class="slot" onclick="show_question_4()">עמותה/ארגון</label>
+                        </td>
+                        <td>
+                            <input name="Selection2" type="radio" id="who_are_you_8" form="form1" value="אחר">
+                            <label for="who_are_you_8" class="slot" onclick="show_question_4()">אחר</label>
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+            </div>
+            <div id="question_4" class="hider pos" align="center">
+                <legend>מלא את הפרטים על מנת שנוכל לחזור אלייך</legend>
+                <input name="fullname" type="text" required class="slotform" id="fullname" form="form1"
+                    placeholder="חברה/שם" title="שם מלא" autocomplete="on">
+
+                <input name="phone" type="tel" required class="slotform" id="phone" form="form1" placeholder="טלפון"
+                    title="טלפון" autocomplete="on">
+
+                <input name="email" type="email" required class="slotform" id="email" form="form1" placeholder="אימייל"
+                    title="אימייל" autocomplete="on">
+
+                <textarea name="iextraT" wrap="hard" dir="rtl" class="slotform" id="extraT" form="form1"
+                    placeholder="פירוט (וזה בסדר אם אין)"></textarea>
+
+                <input name="submit" class="slot" type="submit" id="submit" value="שלח">
+
+
+            </div>
+
+        </form>
+
+
+    </div>
+    <!------------------------------------------------------------------------>
+    <!--wow-->
+    <script type="text/javascript" src="wow.js"></script>
     <script>
-			$("#submit").change(function(){
-			$.get("/index.html?" + $(this).parent("form").find(":input").serialize()); 
-		});
-	</script>
-      <!--scroll click animation-->
-     <script>
-         $(document).ready(function(){
-             $('a[href^="#"]').on('click',function (e) {
-                 e.preventDefault();
-         
-                 var target = this.hash;
-                 var $target = $(target);
-         
-                 $('html, body').stop().animate({
-                     'scrollTop': $target.offset().top
-                 }, 800, 'swing', function () {
-                     window.location.hash = target;
-                 });
-             });
-         });
-         function MM_changeProp(objId,x,theProp,theValue) { //v9.0
-           var obj = null; with (document){ if (getElementById)
-           obj = getElementById(objId); }
-           if (obj){
-             if (theValue == true || theValue == false)
-               eval("obj.style."+theProp+"="+theValue);
-             else eval("obj.style."+theProp+"='"+theValue+"'");
-           }
-         }
-      </script>
-      <!--end-->
-      <!--scroll page to top-->
-      <script>
-         var $toTop = $('#up');
-         $(window).scroll(function () {
-             if ($(this).scrollTop() > 0) {
+        new WOW().init();
+    </script>
+    <!--end-->
+    <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+
+
+
+
+    <script>
+        $("#submit").change(function () {
+            $.get("/index.html?" + $(this).parent("form").find(":input").serialize());
+        });
+    </script>
+    <!--scroll click animation-->
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 800, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+
+        function MM_changeProp(objId, x, theProp, theValue) { //v9.0
+            var obj = null;
+            with(document) {
+                if (getElementById)
+                    obj = getElementById(objId);
+            }
+            if (obj) {
+                if (theValue == true || theValue == false)
+                    eval("obj.style." + theProp + "=" + theValue);
+                else eval("obj.style." + theProp + "='" + theValue + "'");
+            }
+        }
+    </script>
+    <!--end-->
+    <!--scroll page to top-->
+    <script>
+        var $toTop = $('#up');
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 0) {
                 $('#up').fadeIn();
-             } else if ($('#up').is(':visible')) {
-                 $('#up').fadeOut();
-             }
-         });
-         function MM_preloadImages() { //v3.0
-           var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-             var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-             if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-         }
-         
-         function MM_swapImgRestore() { //v3.0
-           var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-         }
-         
-         function MM_findObj(n, d) { //v4.01
-           var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-             d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-           if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-           for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-           if(!x && d.getElementById) x=d.getElementById(n); return x;
-         }
-         
-         function MM_swapImage() { //v3.0
-           var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-            if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-         }
-      </script>
-      <!--scroll page to top-->
-      
-      <!--click on vid to play with controls-->
-      <script type="text/javascript">
-         function vidplay() {
-                var video = document.getElementById("wearoc");
-                var button = document.getElementById("wearoc");
-                if (video.paused) {
-                   video.play();
-                   button.textContent = "||";
-                   video.setAttribute("controls","controls");     
-                } else {/*
-                   video.pause();
-                   button.textContent = ">";
-                   video.removeAttribute("controls");*/
+            } else if ($('#up').is(':visible')) {
+                $('#up').fadeOut();
+            }
+        });
+
+        function MM_preloadImages() { //v3.0
+            var d = document;
+            if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length,
+                    a = MM_preloadImages.arguments;
+                for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) {
+                        d.MM_p[j] = new Image;
+                        d.MM_p[j++].src = a[i];
+                    }
+            }
+        }
+
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr;
+            for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x;
+            if (!d) d = document;
+            if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document;
+                n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n];
+            for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n);
+            return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0,
+                x, a = MM_swapImage.arguments;
+            document.MM_sr = new Array;
+            for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) {
+                    document.MM_sr[j++] = x;
+                    if (!x.oSrc) x.oSrc = x.src;
+                    x.src = a[i + 2];
                 }
-             }
-         
-           
-         
-             function vidplay2() {
-                var video = document.getElementById("xeast");
-                var button = document.getElementById("xeast");
-                if (video.paused) {
-                   video.play();
-                   button.textContent = "||";
-                   video.setAttribute("controls","controls");     
-               } else { /*
-                   video.pause();
-                   button.textContent = ">";
-                   video.removeAttribute("controls");*/
-                }
-             }
-         
-           
-         
-         
-             function vidplay3() {
-                var video = document.getElementById("eyes");
-                var button = document.getElementById("eyes");
-                if (video.paused) {
-                   video.play();
-                  button.textContent = "||";
-                   video.setAttribute("controls","controls"); 
-                   video.addEventListener('ended',function(){
-                     
-             });    
-                } else {/*
-                   video.pause();
-                    button.textContent = ">";
-                   video.removeAttribute("controls");*/
-                }
-             }
-             
-             
-             
-              function vidplay4() {
-                var video = document.getElementById("sigi");
-                var button = document.getElementById("sigi");
-                if (video.paused) {
-                   video.play();
-                  button.textContent = "||";
-                   video.setAttribute("controls","controls"); 
-                   video.addEventListener('ended',function(){
-                     
-             });    
-                } else {/*
-                   video.pause();
-                    button.textContent = ">";
-                   video.removeAttribute("controls");*/
-                }
-             }
-         function MM_setTextOfLayer(objId,x,newText) { //v9.0
-           with (document) if (getElementById && ((obj=getElementById(objId))!=null))
-             with (obj) innerHTML = unescape(newText);
-         }
-         function MM_callJS(jsStr) { //v2.0
-         return eval(jsStr)
-         }
-      </script>
-      <!--end-->
-         
+        }
+    </script>
+    <!--scroll page to top-->
+
+    <!--click on vid to play with controls-->
+    <script type="text/javascript">
+        function vidplay() {
+            var video = document.getElementById("wearoc");
+            var button = document.getElementById("wearoc");
+            if (video.paused) {
+                video.play();
+                button.textContent = "||";
+                video.setAttribute("controls", "controls");
+            } else {
+                /*
+                                   video.pause();
+                                   button.textContent = ">";
+                                   video.removeAttribute("controls");*/
+            }
+        }
+
+
+
+        function vidplay2() {
+            var video = document.getElementById("xeast");
+            var button = document.getElementById("xeast");
+            if (video.paused) {
+                video.play();
+                button.textContent = "||";
+                video.setAttribute("controls", "controls");
+            } else {
+                /*
+                                  video.pause();
+                                  button.textContent = ">";
+                                  video.removeAttribute("controls");*/
+            }
+        }
+
+
+
+
+        function vidplay3() {
+            var video = document.getElementById("eyes");
+            var button = document.getElementById("eyes");
+            if (video.paused) {
+                video.play();
+                button.textContent = "||";
+                video.setAttribute("controls", "controls");
+                video.addEventListener('ended', function () {
+
+                });
+            } else {
+                /*
+                                   video.pause();
+                                    button.textContent = ">";
+                                   video.removeAttribute("controls");*/
+            }
+        }
+
+
+
+        function vidplay4() {
+            var video = document.getElementById("sigi");
+            var button = document.getElementById("sigi");
+            if (video.paused) {
+                video.play();
+                button.textContent = "||";
+                video.setAttribute("controls", "controls");
+                video.addEventListener('ended', function () {
+
+                });
+            } else {
+                /*
+                                   video.pause();
+                                    button.textContent = ">";
+                                   video.removeAttribute("controls");*/
+            }
+        }
+
+        function MM_setTextOfLayer(objId, x, newText) { //v9.0
+            with(document) if (getElementById && ((obj = getElementById(objId)) != null))
+                with(obj) innerHTML = unescape(newText);
+        }
+
+        function MM_callJS(jsStr) { //v2.0
+            return eval(jsStr)
+        }
+    </script>
+    <!--end-->
+
     <script>
-function show_question_2() {
-    document.getElementById("question_1").className = "animated slideOutUp";
-	document.getElementById("question_2").className = "pos2 animated slideInUp";
-}
-function show_question_3() {
-    document.getElementById("question_1").className = "animated slideOutUp";
-	document.getElementById("question_3").className = "pos3 animated slideInUp";
-}
-function show_question_4() {
-    document.getElementById("question_3").className = "animated slideOutUp";
-	document.getElementById("question_4").className = "pos4 animated slideInUp";
-}
-function previous(nextNum , currentNum) {
-	
-	<!-- hides current question number, shows previous question. like every regular previous button ;) 
+        function show_question_2() {
+            document.getElementById("question_1").className = "animated slideOutUp";
+            document.getElementById("question_2").className = "pos2 animated slideInUp";
+        }
 
-	
-   document.getElementById("question_" + currentNum).className = "animated slideOutDown";
-   if (nextNum==3){
-   document.getElementById("question_" + nextNum).className = "pos3 animated slideInDown";
-   }
-     if (nextNum==4){
-   document.getElementById("question_" + nextNum).className = "pos4 animated slideInDown";
-   }
-<!--_____$$$$_________$$$$
-<!--___$$$$$$$$_____$$$$$$$$
-<!--_$$$$$$$$$$$$_$$$$$$$$$$$$
-<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$
-<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$
-<!--_$$$$$$$$$$$$$$$$$$$$$$$$$
-<!--__$$$$$$$$$$$$$$$$$$$$$$$
-<!--____$$$$$$$$$$$$$$$$$$$
-<!--_______$$$$$$$$$$$$$
-<!--__________$$$$$$$
-<!--____________$$$
-<!--_____________$
--->
-	
-}
-function next(preNum , currentNum) {
-	
-	<!-- hides current question number, shows next question. like every regular previous button ;) -->
+        function show_question_3() {
+            document.getElementById("question_1").className = "animated slideOutUp";
+            document.getElementById("question_3").className = "pos3 animated slideInUp";
+        }
 
-   document.getElementById("question_" + currentNum).className = "animated slideOutUp";
-   document.getElementById("question_" + preNum).className = "pos3 animated slideInUp";
-  
-   
-    
-	
-}
-var chk1 = $("input[type='checkbox'][value='פייסבוק']");
-var chk2 = $("input[type='checkbox'][value='עמוד נחיתה']");
+        function show_question_4() {
+            document.getElementById("question_3").className = "animated slideOutUp";
+            document.getElementById("question_4").className = "pos4 animated slideInUp";
+        }
 
-chk1.on('change', function(){
-    chk2.prop('checked',this.checked);
-	chk2.prop('disabled',this.checked);
-});
-</script>
+        function previous(nextNum, currentNum) {
+            // hides current question number, shows previous question. like every regular previous button ;)
+            document.getElementById("question_" + currentNum).className = "animated slideOutDown";
+            if (nextNum == 3) {
+                document.getElementById("question_" + nextNum).className = "pos3 animated slideInDown";
+            }
 
- <script>
-         $(document).ready(function(){
-             
-             $(document).on('change','#question_2 input:checkbox',function () {
-             if($('input:checkbox:checked').length >0) {
-                 $('#next').removeClass('hider')
-                 
-             }
-             else {
-                 $('#next').addClass('hider')
-                 
-             }
-         });
+            if (nextNum == 4) {
+                document.getElementById("question_" + nextNum).className = "pos4 animated slideInDown";
+            }
+            // _____$$$$_________$$$$
+            // ___$$$$$$$$_____$$$$$$$$
+            // _$$$$$$$$$$$$_$$$$$$$$$$$$
+            // $$$$$$$$$$$$$$$$$$$$$$$$$$$
+            // $$$$$$$$$$$$$$$$$$$$$$$$$$$
+            // _$$$$$$$$$$$$$$$$$$$$$$$$$
+            // __$$$$$$$$$$$$$$$$$$$$$$$
+            // ____$$$$$$$$$$$$$$$$$$$
+            // _______$$$$$$$$$$$$$
+            // __________$$$$$$$
+            // ____________$$$
+            // _____________$
+        }
 
-         });
-		 </script>
-         <script type="text/javascript">
-$( document ).ready(function() {
-   document.getElementById('box0').style.marginTop='-600px';
-});
+        function next(preNum, currentNum) {
+            // hides current question number, shows next question. like every regular previous button ;)
+            document.getElementById("question_" + currentNum).className = "animated slideOutUp";
+            document.getElementById("question_" + preNum).className = "pos3 animated slideInUp";
+        }
 
-var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+        var chk1 = $("input[type='checkbox'][value='פייסבוק']");
+        var chk2 = $("input[type='checkbox'][value='עמוד נחיתה']");
 
-function preventDefault(e) {
-  e = e || window.event;
-  if (e.preventDefault)
-      e.preventDefault();
-  e.returnValue = false;  
-}
+        chk1.on('change', function () {
+            chk2.prop('checked', this.checked);
+            chk2.prop('disabled', this.checked);
+        });
+    </script>
 
-function preventDefaultForScrollKeys(e) {
-    if (keys[e.keyCode]) {
-        preventDefault(e);
-        return false;
-    }
-}
+    <script>
+        $(document).ready(function () {
+            $(document).on('change', '#question_2 input:checkbox', function () {
+                if ($('input:checkbox:checked').length > 0) {
+                    $('#next').removeClass('hider')
+                } else {
+                    $('#next').addClass('hider')
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            document.getElementById('box0').style.marginTop = '-600px';
+        });
 
-function disableScroll() {
-  if (window.addEventListener) // older FF
-      window.addEventListener('DOMMouseScroll', preventDefault, false);
-  window.onwheel = preventDefault; // modern standard
-  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-  window.ontouchmove  = preventDefault; // mobile
-  document.onkeydown  = preventDefaultForScrollKeys;
-}
+        var keys = {
+            37: 1,
+            38: 1,
+            39: 1,
+            40: 1
+        };
 
-function enableScroll() {
-    if (window.removeEventListener)
-        window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    window.onmousewheel = document.onmousewheel = null; 
-    window.onwheel = null; 
-    window.ontouchmove = null;  
-    document.onkeydown = null;  
-}
-	function pushDown() {
-		
-		var el = document.getElementById('box0');
-		if ( el.style.marginTop != '-600px' ) {
-			el.style.marginTop = '-600px';
-		}
-		else {
-			el.style.marginTop = '0px';
-		}
-		
-}
-	function pushUp() {
+        function preventDefault(e) {
+            e = e || window.event;
+            if (e.preventDefault)
+                e.preventDefault();
+            e.returnValue = false;
+        }
 
-	var el = document.getElementById('box0');
-		
-			el.style.marginTop = '-600px';
-	
-}
-</script>
-   <script>
-	  	function changeContent(){
-			document.getElementById('gotcha').innerHTML="טל': 052-630-2888";	
-		}
-		function changeBack(){
-			document.getElementById('gotcha').innerHTML="הבנתי";	
-		}
-	  </script>
-         <script>
-   function showIt(){
-   		document.getElementById('box0').style.opacity="1";
-		document.getElementById('box0').style.zIndex="999";
-   }
-     function unshowIt(){
-   		document.getElementById('box0').style.opacity="0";
-		document.getElementById('box0').style.zIndex="-1";
-   }
-   </script>
-   </body>
+        function preventDefaultForScrollKeys(e) {
+            if (keys[e.keyCode]) {
+                preventDefault(e);
+                return false;
+            }
+        }
+
+        function disableScroll() {
+            if (window.addEventListener) // older FF
+                window.addEventListener('DOMMouseScroll', preventDefault, false);
+            window.onwheel = preventDefault; // modern standard
+            window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+            window.ontouchmove = preventDefault; // mobile
+            document.onkeydown = preventDefaultForScrollKeys;
+        }
+
+        function enableScroll() {
+            if (window.removeEventListener)
+                window.removeEventListener('DOMMouseScroll', preventDefault, false);
+            window.onmousewheel = document.onmousewheel = null;
+            window.onwheel = null;
+            window.ontouchmove = null;
+            document.onkeydown = null;
+        }
+
+        function pushDown() {
+            var el = document.getElementById('box0');
+            if (el.style.marginTop != '-600px') {
+                el.style.marginTop = '-600px';
+            } else {
+                el.style.marginTop = '0px';
+            }
+        }
+
+        function pushUp() {
+            var el = document.getElementById('box0');
+            el.style.marginTop = '-600px';
+        }
+    </script>
+    <script>
+        function changeContent() {
+            document.getElementById('gotcha').innerHTML = "טל': 052-630-2888";
+        }
+
+        function changeBack() {
+            document.getElementById('gotcha').innerHTML = "הבנתי";
+        }
+    </script>
+    <script>
+        function showIt() {
+            document.getElementById('box0').style.opacity = "1";
+            document.getElementById('box0').style.zIndex = "999";
+        }
+
+        function unshowIt() {
+            document.getElementById('box0').style.opacity = "0";
+            document.getElementById('box0').style.zIndex = "-1";
+        }
+    </script>
+</body>
+
 </html>
