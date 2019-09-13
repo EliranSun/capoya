@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+.container{
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;	
+}
+body{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;	
+}
+#tiles{
+	display:flex;
+	flex-flow:wrap;
+	justify-content:center;
+	align-items:stretch;
+	align-content:center;
+}
+
+.alignTree{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+	flex-wrap:wrap;
+	
+	
+		
+}
+.alignVideo{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+	flex-wrap:wrap;
+	
+	
+		
+}
+.tile120{
+	width:120px;
+	height:120px;
+	margin:4px;
+	flex:1 1 120px;
+	align-self:stretch;
+	
+}
+.tile240narrow{
+	width:240px;
+	height:120px;
+	margin:4px;
+	flex:1 1 120px;
+	align-self:stretch;
+	
+}
+.tile240{
+	width:240px;
+	height:240px;
+	margin:4px;
+	flex:1 1 240px;
+	align-self:stretch;
+	
+	
+}
+.tileVideo{
+	width:444px;
+	height:auto;
+	margin:4px;
+	flex:1 1 240px;
+	align-self:stretch;
+	background-color:#e3e6e3;
+	
+	
+}
+span{
+	
+	margin:auto;
+	display:table;
+	    height: auto;
+    text-align: center;
+    position: relative;
+    margin-top: 92px;
+    font-size: 23px;
+    color: white;
+    width: 100px;
+    font-weight: 100;
+}
+img{
+	margin:auto;
+	display:table;	
+}
+.sand{
+	background-color:#884b1d;
+}
+.sky{
+	background-color:#406368;
+}
+p{
+	text-align:center;
+	color:white;
+	font-size:14px;
+}
+.fbbg{
+	background-image:url(Photos/Facebook_logo.svg);
+	background-size:cover;	
+	    background-size: 75%;
+    background-position: 28px -18px;
+}
+video{
+	position:relative;
+	width:100%;	
+}
+@media screen and (max-width:400px){
+	.alignTree{
+	
+	flex-direction:row;
+	width:90%;
+	
+}
+.tile240{
+	
+	margin:4px 8px;
+	
+	
+}	
+}

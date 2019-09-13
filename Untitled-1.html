@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="animate.css" rel="stylesheet">
+<link href="hover.css" rel="stylesheet">
+</head>
+<style>
+	body{
+		background-color:#fff;	
+	}
+	.facebook{
+			width:25%;
+			height:240px;
+			position:relative;
+			background-color:#a95e25;
+			top: 4px;
+			left: 0;
+			position: absolute;
+	
+	}
+	table{
+		width:80%;
+		height:800px;
+		background-color:#e3e6e3;	
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.hidden{
+		opacity:0;	
+	}
+	.title{
+		width:30%;
+		height:120px;
+		top:4px;
+		background-color:#a95e25;
+		position:absolute;
+		left:30%;
+		color:white;
+		text-align:center;
+		font-family:'segoe UI';
+		font-size:23px;
+		font-weight:100;
+	}
+</style>
+<body>
+	<table class="hvr-overline-from-center">
+			<tr>
+            	<td>
+                	<tr>
+                    	<td class="title" onmouseover="bound()">קמפיין פייסבוק</td>
+                    </tr>
+                    <tr>
+                    	<td></td>
+                    </tr>
+                </td>
+            	<td id="f1" class="facebook  hvr-bounce-to-bottom"></td>
+            </tr>
+            
+    </table>
+<script>
+	function bound() {
+		document.getElementById("f1").className = "facebook  hvr-bounce-to-bottom";
+	}
+</script>
+</body>
+</html>

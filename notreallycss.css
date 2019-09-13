@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	background-color:#e3e6e3;	
+	margin:0;
+	padding:0;
+}
+p{
+	width:100px;
+	text-align:center;
+	margin:15px;
+	font-weight:100;	
+	color:white;
+}
+h1{
+	text-align:center;
+	margin:56.5px 0px 56.5px 0px;
+	font-weight:100;	
+	color:white;
+}
+video{
+	width:100%;
+	position:relative;
+		
+}
+.vid{
+	width:480px;
+	height:auto;
+}
+td{
+	margin:4px;
+	
+}
+table{
+	display:inline-block;	
+}
+.facebook{
+	    width: 274px;
+    height: 274px;
+    background-image: url(Photos/Facebook_logo.svg);
+    background-position: -20px -10px;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:480px){
+	.tiles{
+		width:100%;
+	
+	}
+	
+	.fill td{
+		width:100%;
+		display:block;
+	}
+
+	p{
+		width:100%;	
+	}
+	
+}

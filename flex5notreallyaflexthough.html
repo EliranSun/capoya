@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>flex5notreallyaflexthough</title>
+<!--<link href="notreallycss.css" rel="stylesheet">-->
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+<link href="animate.css" rel="stylesheet">
+<style>
+	body,html{
+		margin:0;
+		padding:0;	
+		background-color:#e3e6e3;
+		
+	}
+	.fb{
+		display:none;
+	}
+		video{
+		position:relative;
+		width:100%;	
+	}
+	.vid{
+		width:480px;
+		height:auto;
+		display:inline-block;
+		padding:0;
+		margin:0;
+	}
+	h1{
+		width:100%;
+		font-size:33px;
+		font-weight:100;
+		padding:10px 0px 10px 0px;
+		
+	}
+		.tiles{
+		display:inline-block;
+		width:480px;
+		background-color:#a95e25;
+		text-align:center;
+		color:white;
+		font-weight:100;
+		font-family:'segoe UI';
+		
+		
+	}
+	#box{
+		display:table;
+		margin-right:auto;
+		margin-left:auto;
+		width:960px;
+	}	
+	.miniTile{
+	width: 100%;
+   
+    background-color: #8d4f20;
+    margin: 0px 4px 0px 0px;
+    text-align: center;
+    color: white;
+    padding: 0;
+    font-weight: 100;
+    font-family: 'segoe UI';
+	margin:8px 4px 8px 4px;
+}
+p{
+	padding:none;
+	margin:none;
+}
+	.fb{
+		display:inline-block;
+		width:270px;
+		background-color:white;
+		vertical-align:top;
+		margin:0;
+		padding:0;
+	}
+	td{
+		padding:0;
+		margin:0;	
+	}
+	.desktop{
+		/*width:100%;*/
+	}
+	#box{
+		display:none;	
+	}
+	.none{
+		opacity:0;
+	}
+	.white{
+		background-color:white;	
+	}
+	.sand{
+		background-color:	#a95e25;
+	}
+@media screen and (max-width:768px){
+		#box{
+		display:inline;
+		margin:0;
+		width:auto;
+	}	
+	.desktop{
+		display:none;	
+	}
+	.vid{
+		width:480px;
+		height:auto;	
+		margin-left:auto;
+		margin-right:auto;
+		display:table;
+		float:none;
+	}
+	
+	h1{
+		width:100%;
+		padding-top:23px;
+		padding-bottom:23px;		
+		margin-top:8px;
+		font-size:23px;
+		font-weight:100;
+		    margin-bottom: 8px;
+	}
+		.tiles{
+		display:block;
+		width:100%;
+		
+		margin-left:auto;
+		margin-right:auto;
+		background-color:#a95e25;
+		height:auto;
+		text-align:center;
+		color:white;
+		font-weight:100;
+		font-family:'segoe UI';
+		margin-right: 4px;
+	}
+	.fb{
+		display:inline-block;
+		width:178px;
+		background-color:white;
+		vertical-align:bottom;
+		margin-right:8px;
+	}
+	.contain{
+		margin-left:auto;
+		margin-right:auto;
+		display:inline-block;
+		width:300px;
+	}
+	.miniTile{
+	    width: 93px;
+    height: 93px;
+    display: inline-block;
+    background-color: #8d4f20;
+    margin: 0px 4px 0px 0px;
+    text-align: center;
+    color: white;
+    padding: 0;
+    font-weight: 100;
+    font-family: 'segoe UI';
+}
+	.wrapper{
+		display:table;
+		margin-left:auto;
+		margin-right:auto;	
+	}
+	p{
+		font-size:12px;
+		padding:0;
+		margin:0;	
+	}
+
+}
+	@media screen and (max-width:480px){
+	h1{
+		width:100%;
+		padding-top:23px;
+		padding-bottom:23px;		
+		margin-top:8px;
+		font-size:23px;
+		font-weight:100;
+	}
+	.tiles{
+		
+		width:100%;
+	
+	}
+
+	.sand{
+		background-color:#a95e25;	
+	}
+
+.fb{
+		display:none;
+	}
+	
+	.vid{
+		width:100%;	
+	}
+	.facebook{
+		background-image:url(Photos/Facebook_logo_white.svg);	
+		    background-size: 80px;
+    background-repeat: no-repeat;
+  
+    background-position: 95% bottom;
+	}
+.miniTile{
+		width:100%;
+		display:block;
+		background-color:#8d4f20;
+		height:auto;
+		text-align:center;
+		color:white;
+		font-weight:100;
+		font-family:'segoe UI';
+}
+p{
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:13px;
+	margin: 5px 0px 5px 0px;	
+}
+.contain{
+	margin:0;
+	display:inline;	
+}
+	.wrapper{
+		display:inline;
+		margin:0;
+	}
+	}
+</style>
+
+</head>
+
+<body dir="rtl">
+<table class="desktop" align="center" cellspacing="10">
+	<tr>
+    	<td onMouseOver="flip()" onMouseOut="backflip()">
+							 <div class="vid">
+                                <video src="Photos/EyesFinal.mp4" poster="Photos/EyesPlay.png"></video>
+                            </div>
+        </td>
+        <td>
+        	<table onMouseOver="flip()" onMouseOut="backflip()">
+            		<tr>
+                         <td colspan="3" >
+                                    <div class="tiles"><h1 class="facebook" >קמפיין פייסבוק</h1></div>
+                         </td>
+          			</tr>
+                    <tr>
+                    	<td><div class="miniTile" ><p id="f1" class="none">יצירת עמוד עסקי, מיתוג וקריאטיב, לוגו וסמל לעסק</p></div></td>
+                          <td><div class="miniTile" ><p id="f2" class="none">יצירת פרסומת ממוקדת לעמוד העסקי</p></div></td>          
+                          <td><div class="miniTile" ><p id="f3" class="none">יצירת עמוד נחיתה רספונסיבי לפרסומת</p></div></td>     
+                          
+                   </tr> 
+           </table>
+      </td>
+     <td id="f5" class="sand">              
+    		  <img src="Photos/Facebook_logo.svg" id="f4" class="fb none">
+   	</td>
+</tr>
+</table>
+
+
+   <div id="box">
+                <div class="vid">
+                    <video src="Photos/EyesFinal.mp4" poster="Photos/EyesPlay.png"></video>
+                </div>
+                <div class="wrapper">
+                    <div class="contain">
+                        <div class="tiles"><h1 class="facebook">קמפיין פייסבוק</h1></div>
+                        <div class="miniTile"><p>יצירת עמוד עסקי, מיתוג וקריאטיב, לוגו וסמל לעסק</p></div>
+                        <div class="miniTile"><p>יצירת פרסומת ממוקדת לעמוד העסקי</p></div>
+                        <div class="miniTile"><p>יצירת עמוד נחיתה רספונסיבי לפרסומת</p></div>
+                    </div>
+                   
+                <img src="Photos/Facebook_logo.svg" class="fb">
+                
+                </div>
+</div>
+
+
+
+<script>
+	function flip() {
+		document.getElementById("f1").className = " animated flipInY";
+		document.getElementById("f2").className = " animated flipInY";
+		document.getElementById("f3").className = " animated flipInY";
+		document.getElementById("f4").className = " fb animated slideInDown";
+		
+		
+	}
+	function backflip() {
+		document.getElementById("f1").className = " animated flipOutY";
+		document.getElementById("f2").className = " animated flipOutY";
+		document.getElementById("f3").className = " animated flipOutY";
+		document.getElementById("f4").className = " fb animated slideOutUp";
+		
+	}
+</script>
+</body>
+</html>

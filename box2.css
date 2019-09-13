@@ -1,0 +1,157 @@
+	#box2{
+	float: left;
+	clear: none;
+	min-width: 0px;
+	min-height: 0px;
+	position: relative;
+	left: 0px;
+	background-attachment: scroll;
+	-webkit-background-size: auto;
+	background-size: 350px auto;
+	background-position: 102% 98%;
+	background-repeat: no-repeat;
+	background-color: #E3E6E3;
+	z-index: 2;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	visibility: visible;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height:auto;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	
+}
+.thiswillberesponsive{
+	width:80%;
+	margin:0 auto;	
+}
+.glass{
+	height:640px;
+	width:400px;
+	margin:10% 0px;
+	background-image:url(Photos/beachBlur.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	box-shadow: 0px 10px 45px #c3c3c3 !important;
+}
+
+.fullwhite{
+    position: absolute;
+    opacity: 0.8;
+    width: 400px;
+    height: 640px;
+    top: auto;
+    left: auto;
+}
+.sand{
+	/*background-color:rgba(63,98,103,0.8);*/
+	 -webkit-transition:0.5s;
+	 -o-transition:0.5s;
+	 -moz-transition:0.5s; 
+    transition:0.5s;
+}
+.black{
+	/*background-color:rgba(63,98,103,0.8);*/
+	 -webkit-transition:0.5s;
+	 -o-transition:0.5s;
+	 -moz-transition:0.5s; 
+    transition:0.5s;
+}
+.ocean{
+	/*background-color:rgba(63,98,103,0.8);*/
+	 -webkit-transition:0.5s;
+	 -o-transition:0.5s;
+	 -moz-transition:0.5s; 
+    transition:0.5s;
+}
+.sand:hover{
+	background-color:rgba(159,185,189,0.5);
+	
+}
+.black:hover{
+	background-color:rgba(159,185,189,0.5);
+}
+.ocean:hover{
+	background-color:rgba(159,185,189,0.5);
+}
+#box2 h1{
+	color:white;	
+	margin-bottom: 40px;
+}
+#box2 h2{
+	color:white;
+	width:100%;
+	margin:0;
+	padding:0;	
+	position:static;
+}
+li{
+	
+	color:white;
+	margin:10px;
+}
+ul{
+	padding:0px 50px;	
+}
+
+
+.group1{
+	color:white;	
+}
+#box2 p{
+	color:white;
+	margin: 20px 20px;
+}
+.quote{
+	font-size:90px;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	margin:0px !important;
+}
+@media screen and (max-width:1600px){
+.glass{
+	height:600px;
+	width:95%;
+	margin:10% 0px;
+}
+.fullwhite{
+    width: 100%;
+    height: 600px;
+}
+.thiswillberesponsive{
+	width:90%;	
+}
+	
+}
+@media screen and (max-width:768px){
+	#box2 td{
+		display:block;
+	}
+	.glass{
+		height:500px;
+		width:95%;
+		margin:3% 0px;
+	}
+	.fullwhite{
+		width: 100%;
+		height: 500px;
+	}
+	.thiswillberesponsive{
+		width:90%;	
+	}
+		
+}
+@media screen and (max-width:480px){
+
+	.glass{
+		width:100%;
+	}
+	.thiswillberesponsive{
+		width:100%;
+		margin-bottom: 50px;
+		margin-top: 50px;	
+	}
+		
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<html>
+<head>
+<style>
+.hider {
+     visibility:hidden;
+}
+.shown {
+    display:table !important;
+	margin:auto;
+}
+
+input[type="radio"]{
+	display:none;
+}
+input[type="checkbox"]{
+	display:none;
+}
+.slot {
+	color: #FFFFFF;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align: center;
+	font-weight: 100;
+	font-size: 13px;
+	border: 1px solid #FFFFFF;
+	border-radius: 12px;
+	width: 123px;
+	height: 40px;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom:10px;
+	line-height: 35px;
+	display:inline-block;
+}
+.slot:hover{
+	background-color:white;
+	color:grey;	
+}
+.back {
+	color: #FFFFFF;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align: center;
+	font-weight: 100;
+	font-size: 13px;
+	border: 1px solid #FFFFFF;
+	width: 123px;
+	height: 40px;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top:30px;
+	line-height: 35px;
+	display:table;
+}
+.back:hover{
+	background-color:white;
+	color:grey;	
+}
+body{
+	background-color:grey;	
+}
+legend{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color:white;
+	text-align:center;	
+	display:table;
+	margin:auto;
+	font-size:20px;
+}
+input[type="checkbox"]:checked + label {
+    background-color:white;
+	color:darkgrey;
+}
+.pos{
+	position:absolute;
+	top:160px;
+	left:0;
+	right:0;	
+	}
+h1,h6{
+	width:100%;
+	margin-top:50px;
+	color:white;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight:100;	
+	text-align:center;
+}
+h1{
+	margin-bottom:10px;	
+}
+h6{
+	margin-top:0px;
+}
+legend{
+	margin-bottom:50px;	
+}
+.slotform{
+	display: block;
+    background-color: transparent;
+    border: 1px white solid;
+    border-radius: 5px;
+    margin: 10px 0px;
+    width: 24%;
+    text-align: center;
+		
+}
+@media screen and (max-width:768px){
+	td{
+			display:inline-block;
+			
+		}
+	.slot{
+		width:200px;
+		display:table;
+		height:48px;
+		line-height: 47px;	
+	}
+	.slotform{
+		width:80%;
+		height:48px;	
+	}
+}
+@media screen and (max-width:480px){
+	.pos{
+			top:220px;
+		}
+	
+}
+</style>
+<link href="animate.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+
+</head>
+<body>
+	<h1 id="helpUs" style="letter-spacing: 8px; top: 0px; position: static; margin-top: 50px;">רק כמה פרטים וסיימנו</h1>
+    
+         
+	<form action="http://www.ipage.com/scripts/formemail.bml" method="post" id="form1" dir="rtl">
+        	<input type="hidden" name="my_email" value="web@capoya.co.il">
+           	<input type="hidden" name="thankyou_url" value="http://www.capoya.co.il/thankyou.html">
+
+                        <div id="question_1"  class="animated slideInDown pos" align="center">
+                        		<legend>ראשית, בחר את השירות בו היית מעוניין</legend>
+                   		  	
+                   			  <input name="service" type="radio" id="service_1" form="form1" value="קמפיין">
+                   			  <label for="service_1" class="slot" onclick="show_question_2()">קמפיין</label>
+                            	 
+                              <input name="service" type="radio" id="service_2" form="form1" value="פורטפוליו">
+                   			  <label for="service_2" class="slot" onclick="show_question_3()">פורטפוליו</label>
+                              
+                               <input name="service" type="radio" id="service_3" form="form1" value="אתר תוכן">
+                   			  <label for="service_3" class="slot" onclick="show_question_3()">אתר תוכן</label>  
+                        </div>
+                        
+                        <div id="question_2" class="hider pos" align="center">
+                       		<legend>בחר את מאפייני הקמפיין</legend>
+                   		  	
+                   			  <input name="service_p" type="checkbox" id="service_p1" form="form1" value="פייסבוק">
+                   			  <label for="service_p1" class="slot">פייסבוק</label>
+                            	 
+                              <input name="service_p" type="checkbox" id="service_p2" form="form1" value="עמוד נחיתה">
+                   			  <label for="service_p2" class="slot">עמוד נחיתה</label>
+                              
+                               <input name="service_p" type="checkbox" id="service_p3" form="form1" value="וידאו פרסומי">
+                   			  <label for="service_p3" class="slot">וידאו פרסומי</label>  
+                              
+                              
+                              <div id="next" class="back hider" onclick="next(3 , 2, 1, 2)">הבא</div>
+                        </div>
+                        
+                        <div id="question_3" class="hider pos" align="center">
+                       		  	<legend>מי אתה?</legend>
+                    			<table width="200" id="tb2">
+									  <tr align="center">
+                                        		<td>
+                                                    <input name="who_are_you" type="radio" id="who_are_you_1" form="form1" value="פרילנסר">
+                                                    <label for ="who_are_you_1" class = "slot" onclick="show_question_4()">פרילנסר</label>
+                                                </td>
+                                                <td>
+                                                    <input name="Selection2" type="radio" id="who_are_you_2" form="form1" value="סטארטאפ">
+                                                    <label for ="who_are_you_2" class = "slot" onclick="show_question_4()">סטארטאפ</label>
+                                                </td>
+                                                <td>
+                                                    <input name="Selection2" type="radio" id="who_are_you_3" form="form1" value="מקצוע חופשי">
+                                                    <label for ="who_are_you_3" class = "slot" onclick="show_question_4()">מקצוע חופשי</label>
+                                                </td>
+                                                <td>
+                                                  	<input name="Selection2" type="radio" id="who_are_you_4" form="form1" value="אמן">
+                                                    <label for ="who_are_you_4" class = "slot" onclick="show_question_4()">אמן</label>
+                                              	</td>
+										</tr>
+                                        <tr align="center">
+                                        		<td>
+                                                    <input name="Selection2" type="radio"  id="who_are_you_5" form="form1" value="בעל עסק">
+                                                    <label for ="who_are_you_5" class = "slot" onclick="show_question_4()">בעל עסק</label>
+                                        		</td>
+                                                <td>
+                                                    <input name="Selection2" type="radio"  id="who_are_you_6" form="form1" value="חברה">
+                                                    <label for ="who_are_you_6" class = "slot" onclick="show_question_4()">חברה</label>
+                                                </td>
+                                                <td>
+                                                    <input name="Selection2" type="radio" id="who_are_you_7" form="form1" value="עמותה/ארגון">
+                                                    <label for ="who_are_you_7" class = "slot" onclick="show_question_4()">עמותה/ארגון</label>
+                                                </td>
+                                                <td>
+                                                    <input name="Selection2" type="radio"  id="who_are_you_8" form="form1" value="אחר">
+                                                    <label for ="who_are_you_8" class = "slot" onclick="show_question_4()">אחר</label>
+                                              </td>
+										</tr>
+                                    </table>
+   
+                              
+                             	
+
+                        </div>
+                         <div id="question_4" class="hider pos" align="center">
+                       		<legend>מלא את הפרטים על מנת שנוכל לחזור אלייך</legend>
+                                      <input name="fullname" type="text" required  class="slotform" id="fullname" form="form1" placeholder="חברה/שם" title="שם מלא" autocomplete="on">
+                                     
+                                      <input name="phone" type="tel" required class="slotform" id="phone" form="form1" placeholder="טלפון" title="טלפון" autocomplete="on">
+                                      
+                                      <input name="email" type="email" required class="slotform" id="email" form="form1" placeholder="אימייל" title="אימייל" autocomplete="on">
+                                      
+                                      <textarea name="iextraT" wrap="hard" dir="rtl" class="slotform" id="extraT" form="form1" placeholder="פירוט (וזה בסדר אם אין)"></textarea>
+                                     
+                                      <input name="submit" class="slot" type="submit" id="submit" value="שלח">
+                              
+                             
+                        </div>
+                        	
+            </form>
+            
+          
+<script>
+function show_question_2() {
+    document.getElementById("question_1").className = "animated slideOutUp";
+	document.getElementById("question_2").className = "pos animated slideInUp";
+}
+function show_question_3() {
+    document.getElementById("question_1").className = "animated slideOutUp";
+	document.getElementById("question_3").className = "pos animated slideInUp";
+}
+function show_question_4() {
+    document.getElementById("question_3").className = "animated slideOutUp";
+	document.getElementById("question_4").className = "pos animated slideInUp";
+}
+function previous(nextNum , currentNum) {
+	
+	<!-- hides current question number, shows previous question. like every regular previous button ;) 
+
+	
+   document.getElementById("question_" + currentNum).className = "animated slideOutDown";
+    document.getElementById("question_" + nextNum).className = "pos animated slideInDown";
+	
+<!--_____$$$$_________$$$$
+<!--___$$$$$$$$_____$$$$$$$$
+<!--_$$$$$$$$$$$$_$$$$$$$$$$$$
+<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$
+<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$
+<!--_$$$$$$$$$$$$$$$$$$$$$$$$$
+<!--__$$$$$$$$$$$$$$$$$$$$$$$
+<!--____$$$$$$$$$$$$$$$$$$$
+<!--_______$$$$$$$$$$$$$
+<!--__________$$$$$$$
+<!--____________$$$
+<!--_____________$
+-->
+	
+}
+function next(preNum , currentNum, preBtn, altBtn) {
+	
+	<!-- hides current question number, shows next question. like every regular previous button ;) -->
+
+   document.getElementById("question_" + currentNum).className = "animated slideOutUp";
+    document.getElementById("question_" + preNum).className = "pos animated slideInUp";
+	
+}
+var chk1 = $("input[type='checkbox'][value='פייסבוק']");
+var chk2 = $("input[type='checkbox'][value='עמוד נחיתה']");
+
+chk1.on('change', function(){
+    chk2.prop('checked',this.checked);
+	chk2.prop('disabled',this.checked);
+});
+</script>
+
+ <script>
+         $(document).ready(function(){
+             
+             $(document).on('change','#question_2 input:checkbox',function () {
+             if($('input:checkbox:checked').length >0) {
+                 $('#next').removeClass('hider')
+                 
+             }
+             else {
+                 $('#next').addClass('hider')
+                 
+             }
+         });
+
+         });
+		 </script>
+</body>
+</html>

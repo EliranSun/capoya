@@ -1,0 +1,214 @@
+#deskT{
+	display:table;	
+}
+#box2{
+	float: left;
+	clear: none;
+	min-width: 0px;
+	min-height: 0px;
+	position: relative;
+	left: 0px;
+	background-attachment: scroll;
+	-webkit-background-size: auto;
+	background-size: 350px auto;
+	background-position: 102% 98%;
+	background-repeat: no-repeat;
+	background-color: #E3E6E3;
+	z-index: 2;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	visibility: visible;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	
+}
+
+h1{
+	color:#d6d6d6;
+	height:100%;
+	width:100%;
+}
+
+.margin{
+	margin-top:100px;
+	margin-bottom:100px;	
+}
+#portfolio{
+	width:220px; 
+	color:#c5d2d4; 
+	background-color:#3e6166;	
+	
+}
+#description{
+	display:none;
+	cursor:default;
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	
+}
+#suitbrush{
+	width:50px;
+	margin-left:auto;
+	margin-right:auto;
+	cursor:default;
+	margin-bottom:80px;
+	color:#8aa3a6;
+}
+#facebook{
+	width:29px;
+
+}
+#landing{
+	width:29px;
+	
+}
+#commercial{
+	width:50px;
+
+	
+	
+}
+#paragraph{
+	display:none;	
+}
+
+#content{
+	display:table;
+	text-align:center;
+	margin-right:auto;
+	margin-left:auto;	
+	margin-top:75px;
+	margin-bottom:75px;
+	color:#d6d6d6;
+}
+
+#camp{
+	margin-top:122.5px;
+	margin-bottom:122.5px;
+	color:#d6d6d6;	
+}
+#website{
+	
+	display:none;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	
+}
+#box2 h2{
+	position:static;
+	margin:0;
+	padding:0;
+	color:white;	
+}
+#box2 p{
+	font-size:13px;	
+}
+.tick{
+	width:15px;	
+}
+#eyes{
+	width:423px;	
+}
+#wearoc{
+	width:686px;	
+}
+#xeast{
+	width:423px;
+}
+#port{
+	display:table;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#cont{
+	display:table;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#camp{
+	display:table;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+
+.size{
+	width:40px;
+		
+}
+#quote{
+	font-size:100px;
+	line-height:0px;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+}
+#quote2{
+	font-size:100px;
+	line-height:0px;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+}
+@media screen and (max-width:1400px){
+		#deskT{
+		display:table;	
+	}
+	#hitecDesc{
+		width:100%;
+	}
+	#portfolioDesc{
+		width:70%;
+	}
+	#landingDesc{
+	width:70%;	
+}
+#wearoc{
+	width:200%;	
+}
+#xeast{
+	width:50%;	
+}
+#eyes{
+	width:50%;	
+}
+}
+@media screen and (max-width:1150px){
+	
+td{
+	display:block;	
+}
+#website{
+	width:100%	
+}
+}
+@media screen and (max-width:900px){
+#box2 {
+
+	width: 100%;
+	background-color: #EDEDED;
+
+}
+td{
+	display:block;
+}
+#portfolio{
+	width:100%; 
+		
+	
+}
+}
+
+@media screen and (max-width:400px){
+
+
+#box2 {
+	height: 100%;
+	width: 100%;
+	
+}
+}

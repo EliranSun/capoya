@@ -1,0 +1,931 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>שירותי קריאייטיב בוידאו ובאינטרנט | קאפויה</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+      <meta name="viewport" content="width=device-width"/>
+      <meta name="description" content="בניית אתרים לסטארטאפים, פרילנסרים וחברות. צילום סרטוני תדמית, בר מצווה, חתונות" />
+      <meta name="keywords" content="capoya, קאפויה, בניית אתרים, צילום, וידאו, אתר, סרטון פרסומי, קריאייטיב, עסק, סטארטאפ, פרילנסרים" />
+      <link rel="shortcut icon" href="favicon.ico">
+      <link href="MainBar.css" rel="stylesheet" type="text/css">
+      <link href="Box0.css" rel="stylesheet" type="text/css">
+      <link href="Box1.css" rel="stylesheet" type="text/css">
+      <link href="box2.css" rel="stylesheet" type="text/css">
+      <link href="Box3.css" rel="stylesheet" type="text/css">
+      <link href="Box4.css" rel="stylesheet" type="text/css">
+      <link href="box5.css" rel="stylesheet" type="text/css">
+      <link href="cnvyr.css" rel="stylesheet" type="text/css">
+      <link href="animate.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+         @font-face {
+         font-family: 'sSUI';
+         src: url('fonts/segoeuil.ttf') format('truetype');
+         font-weight: 100;
+         }
+         @font-face {
+         font-family: 'Alef', sans-serif;
+         }
+         .player .controls .play {
+         display:none;
+         }
+         body, html {
+         margin:0;
+         padding:0;
+         overflow-x: hidden;
+         -moz-overflow-x: hidden;
+         -o-overflow-x: hidden;
+         -webkit-overflow-x: hidden;
+         box-sizing:border-box;
+         }
+         a:link {
+         color: #000000;
+         }
+         a:visited {
+         color: #000000;
+         }
+         h1 {
+         margin-top: 40px;
+         font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+         text-align: center;
+         font-weight: 100;
+         font-size: 30px;
+         margin-bottom: 10px;
+         }
+         h4 {
+         font-weight: 100;
+         font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+         color: #527177;
+         margin-top: 0px;
+         font-size: 12px;
+         width: 80%;
+         margin-left: 10%;
+         margin-bottom: 20px;
+         }
+      </style>
+      <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+      <!--new animations-->
+      <script type="text/javascript" src="FormAnimations.js"></script>
+      <!--end-->
+      <!--code for the check button to appear or dissapear based on clickes-->
+      <script>
+         $(document).ready(function(){
+             
+             $(document).on('change','#testing3 input:checkbox',function () {
+             if($('input:checkbox:checked').length >1) {
+                 $('#choose').removeClass('hide')
+                 
+             }
+             else {
+                 $('#choose').addClass('hide')
+                 
+             }
+         });
+         
+         
+         });
+      </script>
+      <!--end-->
+      <!--scroll click animation-->
+      <script>
+         $(document).ready(function(){
+             $('a[href^="#"]').on('click',function (e) {
+                 e.preventDefault();
+         
+                 var target = this.hash;
+                 var $target = $(target);
+         
+                 $('html, body').stop().animate({
+                     'scrollTop': $target.offset().top
+                 }, 800, 'swing', function () {
+                     window.location.hash = target;
+                 });
+             });
+         });
+         function MM_changeProp(objId,x,theProp,theValue) { //v9.0
+           var obj = null; with (document){ if (getElementById)
+           obj = getElementById(objId); }
+           if (obj){
+             if (theValue == true || theValue == false)
+               eval("obj.style."+theProp+"="+theValue);
+             else eval("obj.style."+theProp+"='"+theValue+"'");
+           }
+         }
+      </script>
+      <!--end-->
+      <!--scroll page to top-->
+      <script>
+         var $toTop = $('#up');
+         $(window).scroll(function () {
+             if ($(this).scrollTop() > 0) {
+                $('#up').fadeIn();
+             } else if ($('#up').is(':visible')) {
+                 $('#up').fadeOut();
+             }
+         });
+         function MM_preloadImages() { //v3.0
+           var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+             var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+             if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+         }
+         
+         function MM_swapImgRestore() { //v3.0
+           var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+         }
+         
+         function MM_findObj(n, d) { //v4.01
+           var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+             d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+           if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+           for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+           if(!x && d.getElementById) x=d.getElementById(n); return x;
+         }
+         
+         function MM_swapImage() { //v3.0
+           var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+            if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+         }
+      </script>
+      <!--scroll page to top-->
+      <!--click on vid to play with controls-->
+      <script type="text/javascript">
+         function vidplay() {
+                var video = document.getElementById("wearoc");
+                var button = document.getElementById("wearoc");
+                if (video.paused) {
+                   video.play();
+                   button.textContent = "||";
+                   video.setAttribute("controls","controls");     
+                } else {/*
+                   video.pause();
+                   button.textContent = ">";
+                   video.removeAttribute("controls");*/
+                }
+             }
+         
+           
+         
+             function vidplay2() {
+                var video = document.getElementById("xeast");
+                var button = document.getElementById("xeast");
+                if (video.paused) {
+                   video.play();
+                   button.textContent = "||";
+                   video.setAttribute("controls","controls");     
+               } else { /*
+                   video.pause();
+                   button.textContent = ">";
+                   video.removeAttribute("controls");*/
+                }
+             }
+         
+           
+         
+         
+             function vidplay3() {
+                var video = document.getElementById("eyes");
+                var button = document.getElementById("eyes");
+                if (video.paused) {
+                   video.play();
+                  button.textContent = "||";
+                   video.setAttribute("controls","controls"); 
+                   video.addEventListener('ended',function(){
+                     
+             });    
+                } else {/*
+                   video.pause();
+                    button.textContent = ">";
+                   video.removeAttribute("controls");*/
+                }
+             }
+             
+             
+             
+              function vidplay4() {
+                var video = document.getElementById("fuck");
+                var button = document.getElementById("fuck");
+                if (video.paused) {
+                   video.play();
+                  button.textContent = "||";
+                   video.setAttribute("controls","controls"); 
+                   video.addEventListener('ended',function(){
+                     
+             });    
+                } else {/*
+                   video.pause();
+                    button.textContent = ">";
+                   video.removeAttribute("controls");*/
+                }
+             }
+         function MM_setTextOfLayer(objId,x,newText) { //v9.0
+           with (document) if (getElementById && ((obj=getElementById(objId))!=null))
+             with (obj) innerHTML = unescape(newText);
+         }
+         function MM_callJS(jsStr) { //v2.0
+         return eval(jsStr)
+         }
+      </script>
+      <!--end-->
+      <!--analytics-->
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         
+         ga('create', 'UA-69535137-1', 'auto');
+         ga('send', 'pageview');
+         
+      </script>
+      <!--Analytics-->
+   </head>
+   <body>
+      <a href="#box1"><img src="Photos/up.png" alt="קפוץ למעלה" id="up"></a> 
+      <!------------The Main Site Navigator---------------------------------------------------------------------->
+      <div id="MainBar">
+         <table align="center" id="tb">
+            <tr>
+               <td align="center" valign="bottom" 
+                  onMouseOver=											
+                  "MM_swapImage('video','','Photos/videoFill.png',1);
+                  MM_changeProp('video2','','color','#884b1d','SPAN')" 
+                  onMouseOut=	
+                  "MM_swapImgRestore();
+                  MM_changeProp('video2','','color','#000000','SPAN')">
+                  <a href="#box4">
+                  <span  class="stright txtTool" id="video2">וידאו</span> 
+                  <img src="Photos/video.png"  alt="סרטוני תדמית" id="video" />
+                  </a>
+               </td>
+               <td class="gap"></td>
+               <td align="center" valign="bottom"
+                  onMouseOver=
+                  "MM_swapImage('web','','Photos/webFill.png',1);
+                  MM_changeProp('web2','','color','#884b1d','SPAN')" 
+                  onMouseOut="MM_swapImgRestore();
+                  MM_changeProp('web2','','color','#000000','SPAN')">
+                  <a  href="#box2">
+                  <span class="stright txtTool" id="web2">אתר</span>
+                  <img src="Photos/web.png"  alt="בניית אתרים"  id="web"/>
+                  </a> 
+               </td>
+               <td width="400" class="off"></td>
+               <td align="center" class="off">
+                  <img src="Photos/capoya30.png"  alt="קאפויה בניית אתרים וצילום סרטוני תדמית" id="capoyaS" class="stright" style="margin-top:10px;"/>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <!--------------------About box, sliding from top----------------------------------------->
+      <div id = "box0" >
+         <img  id = "thatwhowearebitch" src="Photos/AboutCapoya2.png" alt="קאפויה בניית אתרים וצילום סרטוני תדמית"/>
+         <div id="center2">
+            <img src="Photos/LaptopAbout.jpg" id ="LaptopAbout" class= "unify1" alt="בניית אתרים"/> 
+            <img src="Photos/cameraAbout.jpg" id ="cameraAbout" class= "unify" alt="צילום סרטוני תדמית"/>
+            <p id ="aboutTxt" class = "style" dir="rtl">
+               2 פרילנסרים - מיסיונרים, אשר מאמנים בכל ליבם שיש להעלות את רמת האתרים והסרטונים בארץ לסטנדרטים עולמיים, הן ברמה הויזואלית והן בחווית המשתמש; אם גם לכם נמאס מאתרים מבזים אז הגעתם למקום הנכון, כי לנו בהחלט נמאס. <br>
+               האתר שלכם, זה הפנים שלכם, כרטיס הביקור שלכם ברשת (והרי מי שלא קיים ברשת, לא קיים); <br>
+               אתר מלוטש ומרשים, סרטון תדמיתי איכותי, מעלים משמעותית את איך שהלקוח הולך לתפוס אתכם. אנחנו חיים בעידן חברתי. בעידן של פייסבוק ומימון המונים. המדיום האינטרנטי הוא הפנים שלכם, ומהווה את השלב הראשוני בגירוי הלקוח. אנחנו באמת מאמינים למנטרה הזו. <br>
+               קהל הלקוחות אליו אנחנו בעיקר מכוונים הוא קהילת הסטארטפים. אלה שיוזמים ויוצרים, אלה שמניעים את החברה והתרבות קדימה, אלה שלוקחים סיכונים, אלא שהולכים כנגד כל הסיכויים. אלה שלא תמיד יש להם כסף... <br>
+               פה אנחנו נכנסים לתמונה. אנחנו, בראש ובראשונה, רוצים לספק לכם אתרים וסרטוני תדמית איכותיים במחיר שפוי. אנחנו רוצים למנוע מכם את עוגמת הנפש בביזור מיותר, ולספק לכם את כל המכלול התדמיתי במקום אחד. בעל חברה, עסק, אמן, אשר לא מתפשרים על איכות ורוצים לקבל תשואה הולמת למחיר, אותו כנ"ל. גם אתם ייזמים, בה' הידיעה. <br>
+               אנחנו נשמח לעבוד איתכם.
+            </p>
+         </div>
+         <a href="#box1" style="text-decoration:none !important;">
+            <p id="how2" onClick="MM_changeProp('box0','','top','-3000px','DIV')" onMouseOver="MM_setTextOfLayer('how2','','טל: 052-6302-888')" onMouseOut="MM_setTextOfLayer('how2','','הבנתי')" name="how2" style="text-decoration:none;">הבנתי</p>
+         </a>
+      </div>
+      <!------------------------first box, video text & buttons------------------------------------------------>
+      <div id="box1">
+         <div id="position">
+            <video loop autoplay muted id="vid">
+               <source src="Photos/capoya_creative_services3.webm" type="video/webm">
+               <source src="Photos/capoya_creative_services3.ogg" type="video/ogg">
+               <source src="Photos/capoya_creative_services3.mp4" type="video/mp4">
+            </video>
+         </div>
+         <img src="Photos/Capoya400.png" alt="קאפויה בניית אתרים וסרטוני תדמית" id="capoya400"/>
+         <h2 id="we">אנחנו בונים את זה שונה לחלוטין</h2>
+         <h2 id="you">שירותי קריאייטיב לקמפיינים שיווקיים בוידאו ובאינטרנט</h2>
+         <h3 id="how" name="how" onClick=
+            "MM_changeProp('box0','','top','0px','DIV');MM_changeProp('how2','','opacity','1','P');
+            MM_changeProp('how2','','visibility','visible','P');
+            MM_changeProp('aboutTxt','','opacity','1','P');
+            MM_changeProp('aboutTxt','','display','table','P');
+            MM_changeProp('thatwhowearebitch','','opacity','1','IMG');
+            MM_changeProp('LaptopAbout','','display','inline-block','IMG');
+            MM_changeProp('cameraAbout','','display','inline-block','IMG');
+            MM_changeProp('box0','','opacity','1','DIV')" >מי אנחנו</h3>
+      </div>
+      <!------------------------second box------------------------------------------------>
+      <div id="box2">
+         <table align="center" border="0" style="margin-bottom:100px;margin-top:100px;" id="deskT">
+            <tr>
+               <td id="portfolioDesc" rowspan="2" dir="rtl" style="width:220px; color:#d6d6d6; background-color:#586466"
+                  onmouseover= 	   
+                  "MM_changeProp('description','','display','table','DIV');
+                  MM_changeProp('port','','display','none','P');"
+                  onmouseout= 	   
+                  "MM_changeProp('description','','display','none','DIV');
+                  MM_changeProp('port','','display','table','P');">
+                  <h1 align="center" style="color:#d6d6d6" id="port"  class="animated  bounceInDown">פורטפוליו</h1>
+                  <div id="description" class="animated bounceInUp" align="center">
+                     <img id="suitbrush" src="Photos/Suitbrush.svg" alt="פורטפוליו"/>
+                     <div id="quote" align="center">“</div>
+                     <i>נועד כדי להציג יכולות ביצוע ללקוחות פוטנציאלים. משמש  בעיקר אנשי מקצוע העוסקים בתחום העיצוב החזותי</i>
+                     <br />
+                     <span id="quote2" align="center">„</span>
+                     <br />
+                     <br />
+                     <p>ויקיפדיה </p>
+                  </div>
+               </td>
+               <td>
+                  <video id = "xeast" preload="none" src="Photos/Xeast_4.mp4" poster="Photos/XeastPlay.png" onclick="vidplay2();"
+                     onmouseover= 	   
+                     "MM_changeProp('description','','display','table','DIV');
+                     MM_changeProp('port','','display','none','P');"
+                     onmouseout= 	   
+                     "MM_changeProp('description','','display','none','DIV');
+                     MM_changeProp('port','','display','table','P');"></video>
+               </td>
+               <td rowspan="3" valign="top" >
+                  <table border="0">
+                     <tr>
+                        <td>
+                           <video id="wearoc"  preload="none" src="Photos/EyesFinal.mp4" poster="Photos/EyesPlay.png" width="500" 
+                              onclick="vidplay();"
+                              onmouseover= 	   
+                              "MM_changeProp('website','','display','table','DIV');
+                              MM_changeProp('camp','','display','none','P');"
+                              onmouseout= 	   
+                              "MM_changeProp('website','','display','none','DIV');
+                              MM_changeProp('camp','','display','table','P');"></video>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td id="hitechDesc" dir="rtl" style="color:#d6d6d6; background-color:#86766a"
+                           onmouseover= 	   
+                           "MM_changeProp('website','','display','table','DIV');
+                           MM_changeProp('camp','','display','none','P');"
+                           onmouseout= 	   
+                           "MM_changeProp('website','','display','none','DIV');
+                           MM_changeProp('camp','','display','table','P');">
+                           <h1 align="center" id="camp" class="animated bounceInDown">קמפיין</h1>
+                           <div id="website">
+                              <table align="center" class="animated bounceInUp"  style="overflow-x:hidden;">
+                                 <tr>
+                                    <td align="center">
+                                       <img id="facebook" class="more" src="Photos/facebook_logo.svg" alt="קמפיין פייסבוק"/>
+                                    </td>
+                                    <td rowspan="3" style="width:1px;padding:0;margin:0;background-color:#FFFFFF"></td>
+                                    <td align="center">
+                                       <img id="landing" class="more" src="Photos/landing_logo.svg" alt="עמוד נחיתה"/>
+                                    </td>
+                                    <td rowspan="3" style="width:1px;padding:0;margin:0;background-color:#FFFFFF"></td>
+                                    <td align="center">
+                                       <img id="commercial" class="size" src="Photos/commercial_logo.svg" alt="וידאו פירסומי"/>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center">
+                                       <h2>קמפיין בפייסבוק</h2>
+                                    </td>
+                                    <td align="center">
+                                       <h2>עמוד נחיתה</h2>
+                                    </td>
+                                    <td align="center">
+                                       <h2>וידאו פרסומי</h2>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td valign="top">
+                                       <table width="220">
+                                          <tr>
+                                             <td><img src="Photos/tick.png" class="tick"></td>
+                                             <td>
+                                                <p>יצירת עמוד עסקי, מיתוג וקריאטיב, לוגו וסמל לעסק</p>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td><img src="Photos/tick.png" class="tick"></td>
+                                             <td>
+                                                <p>יצירת פרסומת ממוקדת לעמוד העסקי</p>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td><img src="Photos/tick.png" class="tick"></td>
+                                             <td>
+                                                <p>יצירת עמוד נחיתה רספונסיבי לפרסומת</p>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                    <td valign="top" width="220" align="center">
+                                       <p>יצירת עמוד נחיתה רספונסיבי</p>
+                                    </td>
+                                    <td valign="top" width="220">
+                                       <p style="width:150px;padding-left:30px;padding-right:30px;">יצירת פרסומת או וידאו למטרת שיווק וקידום</p>
+                                       <p style="width:150px;padding-left:30px;padding-right:30px;">ניתן להטמעה בעמוד נחיתה רספונסיבי</p>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <video id="eyes"  preload="none" src="Photos/Wearoc2.mp4" poster="Photos/WearocPlay.png" onclick="vidplay3();"
+                     onmouseover= 	   
+                     "MM_changeProp('paragraph','','display','inline','DIV');
+                     MM_changeProp('content','','display','none','P');"
+                     onmouseout= 	   
+                     "MM_changeProp('paragraph','','display','none','DIV');
+                     MM_changeProp('content','','display','table','P');"></video>
+               </td>
+            </tr>
+            <tr>
+               <td align="center" id="landingDesc" colspan="2" dir="rtl" style="color:#d6d6d6; background-color:#999999"
+                  onmouseover= 	   
+                  "MM_changeProp('paragraph','','display','inline','DIV');
+                  MM_changeProp('content','','display','none','P');"
+                  onmouseout= 	   
+                  "MM_changeProp('paragraph','','display','none','DIV');
+                  MM_changeProp('content','','display','table','P');">
+                  <h1 id="content" class="animated  bounceInDown">אתר תוכן</h1>
+                  <div style="text-align:center" id="paragraph" class="animated bounceInUp">
+                     <img src="Photos/paragraph.png" id="par" style="margin-bottom:20px;margin-top:45px;" class="animated bounceInUp" />       
+                     <p class="animated bounceInUp" style="margin-bottom:50px;">בו ניתן לערוך לפרסם ולנהל תכנים. מיועד בעיקר לבלוגים, אתר לחברה או מוצר</p>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <table id="mobileT" align="center" width="100%">
+            <tr>
+               <td>
+               </td>
+            </tr>
+            <tr>
+               <td>
+               </td>
+            </tr>
+            <tr>
+               <td>
+               </td>
+            </tr>
+            <tr>
+               <td>
+               </td>
+            </tr>
+            <tr>
+               <td>
+               </td>
+            </tr>
+            <tr>
+               <td>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <!-------------------------Third box----------------------------------------------->
+      <div id="box3">
+         <h1 class = "H1Margin white">בקאפויה, אנחנו יוצרים אומנות</h1>
+         <div id="center">
+            <table class="overthetopnotch2">
+               <tr style="height:10px;">
+                  <th class="over"><img src="Photos/fitYou.png"  class= "marginSand" alt="אתר רספונסיבי"/></th>
+                  <!--<th class="over"><img src="Photos/yourSite.png"  class= "marginSand" alt="קידום אתרים"/></th>-->
+                  <th ><img src="Photos/camera2.png"  class= "marginSand" alt="צילום סרטון תדמית"/></th>
+                  <th><img src="Photos/logo.png"  class= "marginSand" alt="מיתוג"/></th>
+               </tr>
+               <tr style="height:10px;">
+                  <th class="over">
+                     <h1 class="marginSandHead wow bounceIn stretch"  data-wow-duration="3s" style="letter-spacing:0px">להתאים אותך</h1>
+                  </th>
+                  <th >
+                     <h1 class="marginSandHead wow bounceIn stretch"  data-wow-duration="3s" style="letter-spacing:0px">לצלם אותך</h1>
+                  </th>
+                  <th>
+                     <h1 class="marginSandHead wow bounceIn stretch" data-wow-duration="3s" style="letter-spacing:0px">למתג אותך</h1>
+                  </th>
+               </tr>
+               <tr valign="top">
+                  <th class="over">
+                     <p class="marginSandTXT wow fadeIn stretch" style="letter-spacing:0px ">עיצוב רספונסיבי המקנה חווית משתמש אופטימלית לכל גודל מסך; הדרך שלך להגיע אל המשתמש בפלטפורמות השונות</p>
+                  </th>
+                  <th>
+                     <p  class="marginSandTXT wow animated fadeIn stretch" style="letter-spacing:0px">צילום וידאו וסטילס שיווקי והטמעתם באתר האינטרנט/פייסבוק; וידאו פרסומי</p>
+                  </th>
+                  <th>
+                     <p  class="marginSandTXT wow fadeIn stretch" style="letter-spacing: 0px;">קריאייטיב וקופירייטינג - יצירת לוגו וסמלים, טקסט שיווקי, המעטפת הגרפית והרעיונית</p>
+                  </th>
+               </tr>
+               <tr>
+                  <th class="overthetop"><img src="Photos/fitYou.png"  class= "marginSand" alt="אתר רספונסיבי"/></th>
+               </tr>
+               <tr>
+                  <th class="overthetop">
+                     <h1 class=" marginSandHead wow bounceIn stretch"  data-wow-duration="3s" style="letter-spacing:0px">להתאים אותך</h1>
+                  </th>
+               </tr>
+               <tr>
+                  <th class="overthetop">
+                     <p class="marginSandTXT wow fadeIn stretch" style="letter-spacing:0px ">עיצוב רספונסיבי המקנה חווית משתמש אופטימלית לכל גודל מסך; הדרך שלך להגיע אל המשתמש בפלטפורמות השונות</p>
+                  </th>
+               </tr>
+            </table>
+            <table class="overthetopnotch">
+               <tr>
+                  <th ><img src="Photos/logo.png"  class= "marginSand" alt="מיתוג"/></th>
+               </tr>
+               <tr>
+                  <th>
+                     <h1 class="marginSandHead wow bounceIn stretch" data-wow-duration="3s" style="letter-spacing:0px">למתג אותך</h1>
+                  </th>
+               </tr>
+               <tr>
+                  <th>
+                     <p  class="marginSandTXT wow fadeIn stretch" style="letter-spacing: 0px;">קריאייטיב וקופירייטינג - יצירת לוגו וסמלים, טקסט שיווקי, המעטפת הגרפית והרעיונית</p>
+                  </th>
+               </tr>
+               <tr>
+                  <th><img src="Photos/camera2.png"  class= "marginSand" alt="צילום סרטון תדמית"/></th>
+               </tr>
+               <tr>
+                  <th>
+                     <h1 class="marginSandHead wow bounceIn stretch"  data-wow-duration="3s" style="letter-spacing:0px">לצלם אותך</h1>
+                  </th>
+               </tr>
+               <tr>
+                  <th>
+                     <p  class="marginSandTXT wow animated fadeIn stretch" style="letter-spacing:0px">צילום וידאו וסטילס שיווקי והטמעתם באתר האינטרנט/פייסבוק; וידאו פרסומי</p>
+                  </th>
+               </tr>
+               <tr>
+                  <th><img src="Photos/yourSite.png"  class= "marginSand" alt="קידום אתרים"/></th>
+               </tr>
+               <tr>
+                  <!--	<th><h1 class="marginSandHead wow bounceIn stretch"  data-wow-duration="3s" style="letter-spacing:0px">למצוא אותך</h1></th>-->
+               </tr>
+               <tr>
+                  <!--<th> <p class="marginSandTXT wow fadeIn stretch" style="letter-spacing:0px">הטמעת כותרות ומילות מפתח רלוונטיות באתר באופן שייקדם את מציאתו במנועי החיפוש השונים</p></th>-->
+               </tr>
+               <tr>
+                  <th><img src="Photos/fitYou.png"  class= "marginSand" alt=""/></th>
+               </tr>
+               <tr>
+                  <th>
+                     <h1 class=" marginSandHead wow bounceIn stretch"  data-wow-duration="3s" style="letter-spacing:0px">להתאים אותך</h1>
+                  </th>
+               </tr>
+               <tr>
+                  <th>
+                     <p class="marginSandTXT wow fadeIn stretch" style="letter-spacing:0px ">עיצוב רספונסיבי המקנה חווית משתמש אופטימלית לכל גודל מסך; הדרך שלך להגיע אל המשתמש בפלטפורמות השונות</p>
+                  </th>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <!-----------------------forth box------------------------------------------------->
+      <div id="box4" class="clearfix">
+         <video src="Photos/sigi.mp4" id="fuck" onClick="vidplay4();" class="resize2"  poster="Photos/Sigi.jpg" style="cursor: pointer; " preload="none"></video>
+         <div id="center">
+            <table style="border-collapse: collapse;">
+               <tr>
+                  <th style="width:252px; 
+                     margin-right:15px; 
+                     border-top-left-radius:30px; 
+                     border-top-right-radius:30px; 
+                     background-color:#FFFFFF"> 
+                     <img src="Photos/4k.png" alt="איכות צילום" class="photosize"/>
+                  </th>
+                  <th style="width:15px"></th>
+                  <th style="width:252px;
+                     margin-right:15px; 
+                     border-top-left-radius:30px; 
+                     border-top-right-radius:30px; 
+                     background-color:#FFFFFF">
+                     <img src="Photos/Film.png" alt="וידאו פרסומי" class="photosize"/>
+                  </th>
+               </tr>
+               <tr>
+                  <th style="width:252px;
+                     background-color:#FFFFFF;
+                     border-color:#FFFFFF;
+                     vertical-align: top; 
+                     border-bottom-color:#FFFFFF;
+                     border-bottom-left-radius:30px;
+                     border-bottom-right-radius:30px;">
+                     <h3 dir="rtl">איכות 4K</h3>
+                  </th>
+                  <th style="width:15px"></th>
+                  <th style="width:252px;
+                     background-color:#FFFFFF; 
+                     vertical-align: top; 
+                     border-bottom-left-radius:30px;
+                     border-bottom-right-radius:30px;">
+                     <h3 dir="rtl">וידאו פרסומי</h3>
+                  </th>
+               </tr>
+               <tr>
+                  <th style="width:15px"></th>
+               </tr>
+               <tr style="height:15px;"> </tr>
+               <tr>
+                  <th style="width:252px; 
+                     border-top-left-radius:30px; 
+                     border-top-right-radius:30px; 
+                     background-color:#FFFFFF">
+                     <img src="Photos/Note.png" alt="סאונד מקצועי" class="photosize"/>
+                  </th>
+                  <th style="width:15px"></th>
+                  <th style="width:252px; 
+                     border-top-left-radius:30px; 
+                     border-top-right-radius:30px; 
+                     background-color:#FFFFFF"> 
+                     <img src="Photos/Color.png" alt="תיקוני צבע" class="photosize"/>
+                  </th>
+               </tr>
+               <tr>
+                  <th style="width:252px; 
+                     background-color:#FFFFFF;
+                     border-bottom-left-radius:30px;
+                     border-bottom-right-radius:30px;">
+                     <h3 dir="rtl">סאונד מקצועי</h3>
+                  </th>
+                  <th style="width:15px"></th>
+                  <th style="width:252px; 
+                     background-color:#FFFFFF;
+                     margin-bottom:10px;
+                     border-bottom-left-radius:30px;
+                     border-bottom-right-radius:30px;">
+                     <h3 dir="rtl">תיקוני צבע</h3>
+                  </th>
+               </tr>
+               <tr>
+                  <th style="width:15px"></th>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <!------------form box, last box------------------------------------------------------------>
+      <div id="box5" dir="rtl">
+         <h1 id="helpUs" style="letter-spacing: 8px; top: 0px; position: static; margin-top: 50px;">עזור לנו לעזור לך</h1>
+         <div id="questionere" style="letter-spacing:1px">שאלון אינטואטיבי זריז למילוי</div>
+         <form action="http://www.ipage.com/scripts/formemail.bml" method="post" id="form1">
+            <input type="hidden" name="my_email" value="web@capoya.co.il">
+            <input type="hidden" name="thankyou_url" value="http://capoya.co.il/thankyou.html">
+            <div class="testingPre">
+               <div id="center2">
+                  <legend class="wow fadeIn anime0" data-wow-duration="1s">ראשית, בחר את השירות בו היית מעוניין</legend>
+                  <label>
+                     <input name="Selection0" type="radio" id="Selection0_1" form="form1" value="קמפיין">
+                     <p class="slot anime0 yesQB">קמפיין</p>
+                  </label>
+                  <label>
+                     <input name="Selection0" type="radio" id="Selection0_2" form="form1" value="פורטפוליו">
+                     <p class="slot anime00 yesQB">פורטפוליו</p>
+                  </label>
+                  <label>
+                     <input name="Selection0" type="radio" id="Selection0_3" form="form1" value="אתר תוכן">
+                     <p class="slot anime00 yesQB">אתר תוכן</p>
+                  </label>
+               </div>
+            </div>
+            <div id="camp" class="noneQ">
+               <table>
+                  <legend dir="rtl" class="CampOpt noneQ">בחר את מאפייני הקמפיין</legend>
+                  <label>
+                     <input name="CheckboxGroupC" type="checkbox" id="CheckboxGroupC_0" form="form1" value="רושם/מיתוג">
+                     <p id="optP3" class = "CampOpt slot noneQ">פייסבוק</p>
+                  </label>
+                  <label>
+                     <input name="CheckboxGroup1" type="checkbox" id="CheckboxGroupC_1" form="form1" value="חשיפה">
+                     <p id="optP3"  class = "CampOpt slot noneQ">עמוד נחיתה</p>
+                  </label>
+                  <label>
+                     <input name="CheckboxGroupC" type="checkbox" id="CheckboxGroupC_2" form="form1" value="רשימת תפוצה">
+                     <p id="optP3"  class = "CampOpt slot noneQ"> וידאו פרסומי</p>
+                  </label>
+               </table>
+               <div id="center2">
+                  <div id="chooseCAMP" class = "CampOpt NextStyle hide">הבא</div>
+               </div>
+            </div>
+            <div class="testingPre2 noneQ">
+               <div id="center2">
+                  <legend class="anime0B noneQ">בחר את מאפייני הקמפיין</legend>
+                  <label>
+                     <input name="Selection0B" type="checkbox" id="Selection0B_1" form="form1" value="פייסבוק">
+                     <p dir ="rtl" class="slot anime0B noneQ">פייסבוק</p>
+                  </label>
+                  <label>
+                     <input name="Selection0B" type="checkbox" id="Selection0B_2" form="form1" value="עמוד נחיתה">
+                     <p  class="slot anime0B noneQ">עמוד נחיתה</p>
+                  </label>
+                  <label>
+                     <input name="Selection0B" type="checkbox" id="Selection0B_3" form="form1" value="וידאו פרסומי">
+                     <p  class="slot anime0B noneQ">וידאו פרסומי</p>
+                  </label>
+                  <label>
+               </div>
+            </div>
+            <div class="testing noneQ">
+            <div id="center2">
+            <legend class="anime noneQ">בחר את האתר בו היית מעוניין</legend>
+            <label>
+            <input name="Selection1" type="radio" id="Selection1_2" form="form1" value="אתר תדמית">
+            <p class=" slot anime noneQ">אתר תוכן</p>
+            </label>
+            <label>
+            <input name="Selection1" type="radio" id="Selection1_3" form="form1" value="עמוד נחיתה">
+            <p class="slot anime noneQ">עמוד נחיתה</p>
+            </label>
+            <label>
+            <input name="Selection1" type="radio" id="Selection1_4" form="form1" value="פורטפוליו">
+            <p class=" slot anime noneQ">פורטפוליו</p>
+            </label>
+            </div>
+            </div>
+            <div id="testing2" class="noneQ">
+               <div id="center2">
+                  <legend dir="rtl" class="anime2 noneQ">מי אתה?</legend>
+                  <table width="200" id="tb2">
+                     <label>
+                        <input name="Selection2" type="radio" id="Selection2_0" form="form1" value="פרילנסר">
+                        <p class = "slot anime2 arisen noneQ"q1>פרילנסר</p>
+                     </label>
+                     <label>
+                        <input name="Selection2" type="radio" id="Selection2_1" form="form1" value="סטארטאפ">
+                        <p class="slot anime2 arisen noneQ"q1> סטארטאפ</p>
+                     </label>
+                     <label>
+                        <input name="Selection2" type="radio" id="Selection2_2" form="form1" value="מקצוע חופשי">
+                        <p class="slot anime2 arisen noneQ"q1> מקצוע חופשי</p>
+                     </label>
+                     <label>
+                        <input name="Selection2" type="radio" id="Selection2_3" form="form1" value="אמן">
+                        <p  class="anime2 slot arisen noneQ"q1> אמן</p>
+                     </label>
+                     <br>
+                     <label>
+                        <input name="Selection2" type="radio"  id="Selection2_4" form="form1" value="בעל עסק">
+                        <p  class="slot anime2 arisen2 noneQ"q1> בעל עסק</p>
+                     </label>
+                     <label>
+                        <input name="Selection2" type="radio"  id="Selection2_5" form="form1" value="חברה">
+                        <p  class="slot anime2 noneQ"q1>חברה</p>
+                     </label>
+                     <label>
+                        <input name="Selection2" type="radio" id="Selection2_6" form="form1" value="עמותה/ארגון">
+                        <p  class="slot anime2 arisen2 noneQ"q1> עמותה/ארגון</p>
+                     </label>
+                     <label>
+                        <input name="Selection2" type="radio"  id="Selection2_7" form="form1" value="אחר">
+                        <p  class="slot anime2 arisen2 noneQ"q1> אחר</p>
+                     </label>
+                  </table>
+               </div>
+            </div>
+            <div id="testing3" class="noneQ">
+               <table>
+                  <legend dir="rtl" class="anime3 noneQ">לשם מה אתה רוצה אתר?</legend>
+                  <label>
+                     <input name="CheckboxGroup1" type="checkbox" id="CheckboxGroup1_0" form="form1" value="רושם/מיתוג">
+                     <p id="optC1" class = "anime3 slot">רושם/מיתוג</p>
+                  </label>
+                  <label>
+                     <input name="CheckboxGroup1" type="checkbox" id="CheckboxGroup1_1" form="form1" value="חשיפה">
+                     <p id="optC2"  class = "anime3 slot">חשיפה</p>
+                  </label>
+                  <label>
+                     <input name="CheckboxGroup1" type="checkbox" id="CheckboxGroup1_2" form="form1" value="רשימת תפוצה">
+                     <p id="optC3"  class = "anime3 slot"> רשימת תפוצה</p>
+                  </label>
+                  <label>
+                     <input name="CheckboxGroup1" type="checkbox" id="CheckboxGroup1_3" form="form1" value="היתכנות המוצר">
+                     <p id="optC4"  class = "anime3 slot">היתכנות המוצר</p>
+                  </label>
+                  <br>
+                  <label>
+                     <input name="CheckboxGroup1" type="checkbox" id="CheckboxGroup1_4" form="form1" value="הענקת שירות">
+                     <p id="optC5"  class = "anime3 slot">הענקת שירות</p>
+                  </label>
+                  <label>
+                     <input name="CheckboxGroup1" type="checkbox" id="CheckboxGroup1_5" form="form1" value="קידום/יוקרה">
+                     <p id="optC6"  class = "anime3 slot">קידום/יוקרה</p>
+                  </label>
+                  <label>
+                     <input name="CheckboxGroup1" type="checkbox" class="part4" id="CheckboxGroup1_6" form="form1" value="וויראליות">
+                     <p id="optC7"  class = "anime3 slot">וויראליות</p>
+                  </label>
+                  <label>
+                     <input name="CheckboxGroup1" type="checkbox" class="part4" id="CheckboxGroup1_7" form="form1" value="גלובליות">
+                     <p id="optC8"  class = "anime3 slot">גלובליות</p>
+                  </label>
+               </table>
+               <div id="center2">
+                  <div id="choose" class = "anime3 NextStyle hide">הבא</div>
+               </div>
+            </div>
+            <div id="testing4" class="noneQ">
+               <legend dir="rtl" class="anime4 noneQ">בחר את השירותים בהם אתה מעוניין</legend>
+               <div id="center3">
+                  <table>
+                     <label>
+                        <input name="CheckboxGroup2" type="checkbox" disabled id="CheckboxGroup2_0" form="form1" value="קידום אתר" checked>
+                        <div id="optD1" dir="rtl" class="anime4 Bigslot" > SEO*<br>
+                           עיצוב רספונסיבי* 
+                        </div>
+                     </label>
+                     <label>
+                        <input name="CheckboxGroup2" type="checkbox" id="CheckboxGroup2_1" class="part4" form="form1" value="מיתוג">
+                        <div id="optD2" class="anime4 Bigslot" >
+                           <h6 id="brand" class="anime4">מיתוג</h6>
+                           <p id="lines" class="anime4">לוגו, סמל, ברים, סיסמאות, קונספט עסקי לאתר</p>
+                        </div>
+                     </label>
+                     <label>
+                        <input name="CheckboxGroup2" type="checkbox" id="CheckboxGroup2_2" class="part4" form="form1" value="צילום">
+                        <div id="optD3" class="anime4 Bigslot">
+                           <h6 id="photo" class="anime4">צילום</h6>
+                           <p id="lines2" class="anime4">בוקינג, צילום תדמיתי לעסק/חברה, פורטרייטים עצמיים והטמעתם באתר</p>
+                        </div>
+                     </label>
+                     <label>
+                        <input name="CheckboxGroup2" type="checkbox" class="part4" id="CheckboxGroup2_3" form="form1" value="סרטון תדמית">
+                        <div id="optD4" class="anime4 Bigslot">
+                           <h6 id="Cvideo" class="anime4">סרטון תדמית</h6>
+                           <p id="lines4" class="anime4">הקסם שבתנועה</p>
+                           <p id="info" class="anime4">מידע נוסף בסוף הטופס</p>
+                        </div>
+                     </label>
+                  </table>
+               </div>
+               <div id="choose2"  class="anime4 NextStyle">הבא</div>
+               <p id="line3" class="anime4" dir="rtl" style="letter-spacing:1px">כלול בתור שירות ברירת מחדל*</p>
+            </div>
+            <div id="testing5" class="noneQ">
+               <legend dir="rtl" class="anime5 noneQ">ורגע לפני הסוף</legend>
+               <div id="ifyousaw" class="anime5 noneQ">אם ראית אתר מסויים שמשך את תשומת לבך והיית מעוניין שנראה אותו, נשמח אם תצרף לינק מתאים</div>
+               <br>
+               <br>
+               <input name="link" type="text" id="link"  class="anime5" placeholder="הדבק כאן לינק">
+               <br>
+               <br>
+               <br>
+               <div id="center2">
+                  <div id="next"  class="anime5 NextStyle">הבא</div>
+               </div>
+            </div>
+            <div id="testing6" class="noneQ">
+               <legend id="legendForm" dir="rtl" class="anime6 noneQ">מלא את הפרטים על מנת שנוכל לחזור אלייך</legend>
+               <div id="center2">
+                  <input name="fullname" type="text" required  class="anime6 formStyle" id="fullname" form="form1" placeholder="חברה/שם" title="שם מלא" autocomplete="on">
+                  <br>
+                  <input name="phone" type="tel" required class="anime6 formStyle" id="phone" form="form1" placeholder="טלפון" title="טלפון" autocomplete="on">
+                  <br>
+                  <input name="email" type="email" required class="anime6 formStyle" id="email" form="form1" placeholder="אימייל" title="אימייל" autocomplete="on">
+                  <br>
+                  <textarea name="iextraT" wrap="hard" dir="rtl" class="anime6 formStyleField" id="extraT" form="form1" placeholder="פירוט (וזה בסדר אם אין)"></textarea>
+                  <br>
+                  <input name="submit" class="anime6 NextStyle" type="submit" id="submit" value="שלח">
+               </div>
+            </div>
+         </form>
+         <div id="testing00" class="noneQ">
+            <div class="noneQ backStyle" id="back0">הקודם</div>
+         </div>
+         <div id="testing0" class="noneQ">
+            <div class="noneQ backStyle" id="back">הקודם</div>
+         </div>
+         <div id="testing0A" class="noneQ">
+            <div class="noneQ backStyle" id="back2">הקודם</div>
+         </div>
+         <div id="testing0B" class="noneQ">
+            <div class="noneQ backStyle" id="back3">הקודם</div>
+         </div>
+         <div id="testing0C" class="noneQ">
+            <div class="noneQ backStyle" id="back4">הקודם</div>
+         </div>
+         <div id="testing0D" class="noneQ">
+            <div class="noneQ backStyle" id="back5">הקודם</div>
+         </div>
+         <div id="testing0D2" class="noneQ">
+            <div class="noneQ backStyle" id="back5B">הקודם</div>
+         </div>
+      </div>
+      <!------------------------------------------------------------------------> 
+      <!--wow--> 
+      <script type="text/javascript" src="wow.js"></script> 
+      <script>
+         new WOW().init();
+      </script> 
+      <!--end-->
+   </body>
+</html>
